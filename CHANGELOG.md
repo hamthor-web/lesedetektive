@@ -22,3 +22,8 @@
 ## Dokumentationsfortschreibung 01.11.2026
 
 Spielakte, Aufgaben und Gesamtverwaltung auf den aktuellen bestätigten Stand gebracht; Quellcode-Sicherung und Nachweise bereitgestellt. Dies verändert weder die Spiel-/Cacheversion noch den Spielcode. Umfang und Prüfgrenzen: PROJEKTSTAND.md.
+
+
+## Zufällige Kartenfolge · Version 2026.11.01.6
+
+Jede neue Leserunde mischt alle 24 Karten nach dem Zufallsprinzip. Jede Karte kann zuerst erscheinen; innerhalb einer Runde kommt jede Karte genau einmal vor. Die Reihenfolge wird je Profil zusammen mit den Treffern gespeichert und beim Fortsetzen wiederhergestellt. Bestehende Spielstände behalten die aktuelle Karte und bereits bearbeitete Karten; noch ausstehende Karten werden gemischt.

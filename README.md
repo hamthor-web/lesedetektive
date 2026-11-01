@@ -58,3 +58,8 @@ Die Arbeitsflächen passen im Hochformat ihre Breite, Mindesthöhe, Abstände un
 ## Eröffnungsbild
 
 Die gelieferte Illustration „Lesen und suchen Hintergrund.png“ liegt als unverändertes Original unter `assets/startbildschirm.png` (1792 × 2688 Pixel). Sie erscheint in der Profilauswahl und auf der Startseite. Im Querformat sind Bild und Bedienung nebeneinander angeordnet; im Hochformat steht der wichtige obere Bildbereich über der Auswahl. Kopf/Krone, Lupe und Schild bleiben frei von Bedienelementen. Der helle Originalhintergrund wird bis zum Bildschirmrand fortgeführt. Das Bild wird proportional dargestellt, nicht verzerrt oder neu komprimiert; das Offline-Paket enthält das Original. Extremes Vergrößern kann die tatsächliche Rasterauflösung nicht erhöhen. Version 2026.11.01.5.
+
+
+## Zufällige Kartenfolge · Version 2026.11.01.6
+
+Jede neue Leserunde mischt alle 24 Karten nach dem Zufallsprinzip. Jede Karte kann zuerst erscheinen; innerhalb einer Runde kommt jede Karte genau einmal vor. Die Reihenfolge wird je Profil zusammen mit den Treffern gespeichert und beim Fortsetzen wiederhergestellt. Bestehende Spielstände behalten die aktuelle Karte und bereits bearbeitete Karten; noch ausstehende Karten werden gemischt.

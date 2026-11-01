@@ -142,3 +142,8 @@ Die Verwendung der beiden gelieferten Würstchenvideos ist für diese App umgese
 Grundlagen sind die Nutzerentscheidungen und bereitgestellten Materialien dieses Entwicklungsverlaufs, der referenzierte Chat „Bildzuordnungssätze auflisten“ (6ae63cfd-8698-83eb-a023-addf8092b227), die vorhandene CH-/SCH-Testversion, die beiden nutzerbearbeiteten JSON-Sicherungen, das Grundbilder-ZIP, die einzeln gewählten Bilddateien, die Word-Wortpaare und die beiden MP4-Dateien. Die Verwaltungsgrundlage für die Einordnung in die Gesamtübersicht ist `Lesespiele_Projektverwaltung_90_Saetze_3_Bildpakete_2026-10-31.zip`.
 
 Aktueller lokaler Pflegeort des Spielcodes ist `lesedetektive/`. Die neue Gesamtverwaltung schreibt Z2 fort und erhält die anderen 17 Mastereinträge und deren Materialien. Deren technische Stände wurden in dieser Runde nicht neu geprüft. Ältere Projektakten und Vorschauen bleiben als Historie erhalten; sie haben bei den hier ausdrücklich aktualisierten Punkten keinen Vorrang vor diesem Stand.
+
+
+## Zufällige Kartenfolge · Version 2026.11.01.6
+
+Jede neue Leserunde mischt alle 24 Karten nach dem Zufallsprinzip. Jede Karte kann zuerst erscheinen; innerhalb einer Runde kommt jede Karte genau einmal vor. Die Reihenfolge wird je Profil zusammen mit den Treffern gespeichert und beim Fortsetzen wiederhergestellt. Bestehende Spielstände behalten die aktuelle Karte und bereits bearbeitete Karten; noch ausstehende Karten werden gemischt.
