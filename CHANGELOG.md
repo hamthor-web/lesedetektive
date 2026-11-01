@@ -1,5 +1,12 @@
 # Änderungsstand · Lesedetektive
 
+## 01.11.2026 · Version 2026.11.01.5
+
+- 14 Ei/ie-Karten aus der nutzerbearbeiteten Sicherung ergänzt: jetzt 24 Karten, 82 Trefferflächen, 25 eigene Sternpositionen.
+- Alle Bilder unverändert in einzelne Bilddateien ausgelagert und offline verfügbar.
+- Alte abgeschlossene Zehner-Runden starten bei der ersten neuen Karte; Teilfortschritte bleiben erhalten.
+- Alle vier Prüfprogramme bestanden; Projektübersicht und Übernahmenachweis aktualisiert.
+
 ## 01.11.2026 · veröffentlichter Spielcode 134017d
 
 - Titel überall „Was zischt denn da?“; zuletzt geliefertes Original-Hintergrundbild mit 1792 × 2688 Pixeln.

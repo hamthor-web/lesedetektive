@@ -1,6 +1,6 @@
 # Z2 – Lesedetektive
 
-Dokumentationsstand: **01.11.2026** · veröffentlichte Web-App: **2026.11.01.4**
+Dokumentationsstand: **01.11.2026** · veröffentlichte Web-App: **2026.11.01.5**
 
 Die frühere Projektbezeichnung **Buchstaben-Detektive** wird unter der bestehenden Kennung **Z2** als **Lesedetektive** fortgeführt. Es handelt sich um eine eigenständige App mit zwei Spielen. Sie wurde nicht in die große Spielesammlung integriert. Deren Profilauswahl diente als Gestaltungs- und Funktionsreferenz.
 
@@ -9,18 +9,43 @@ Die frühere Projektbezeichnung **Buchstaben-Detektive** wird unter der bestehen
 | Spieladresse | https://hamthor-web.github.io/lesedetektive/ |
 | Repository | https://github.com/hamthor-web/lesedetektive |
 | Branch | main |
-| Maßgeblicher Spielcode | 134017dcb22cb8621c0181aef5f84a3c8b179704 |
-| Versionsdatei | version.json: 2026.11.01.4; gleiche Versionsnummer in pwa.js und sw.js |
+| Maßgeblicher Spielcode | main, App-Version 2026.11.01.5 |
+| Versionsdatei | version.json: 2026.11.01.5; gleiche Versionsnummer in pwa.js und sw.js |
 | Veröffentlichung | GitHub Pages, Aufbau erfolgreich; Repository und Seitenstatus für diese Dokumentation zurückgelesen |
 | Plattform | Installierbare Web-App mit Offline-Paket; keine APK-/App-Store-Veröffentlichung |
 
 Der genannte Commit bezeichnet den letzten Spielcode-Stand. Eine nachfolgende reine Dokumentationsaktualisierung verändert diese Spielversion nicht.
 
+## Erweiterung Ei/ie · Version 2026.11.01.5
+
+Die freigegebene Arbeitsfassung wurde aus `Ei_Ie_Arbeitsfassung_Sicherung.json` übernommen. Die 14 neuen Karten folgen als Karten 11–24 auf die bisherigen zehn Karten. Insgesamt: **24 Bilder, 82 Trefferflächen und 25 ausdrücklich gesetzte Sternpositionen**. Die neuen 48 Flächen und elf Sternpositionen bleiben unverändert. Bilder sind bytegleich als separate Dateien gespeichert. Der Editor bleibt in der getrennten Arbeitsfassung.
+
+Bereits abgeschlossene Zehner-Runden setzen bei Karte 11 fort. Laufende Spielstände bleiben erhalten. Alle 24 Bilder sind im Offline-Paket enthalten. Nach der Veröffentlichung auf der Startseite „Aktualisieren“ wählen und den vollständigen Download abwarten.
+
+| Neue Karte | Lesetext | Suchwörter |
+|---|---|---|
+| 11 | Die kleine Ziege spielt mit einem Stein. | Ziege, Stein |
+| 12 | Ein feines Schwein liegt auf der weiten Wiese. | Schwein, Wiese |
+| 13 | Die Biene fliegt mit einem zweiten Eis nach Hause. | Biene, Eis, Haus |
+| 14 | Sieben Ameisen ziehen einen riesigen Käse im Kreis. | Sieben Ameisen, Käse, Kreis |
+| 15 | Ein Riese niest nie in einen kleinen Eimer. | Riese, Eimer |
+| 16 | Meine Katze schiebt die Seife unter die Liege. | Katze, Seife, Liege |
+| 17 | Die kleine Fliege reist auf einer Banane. | Fliege, Banane |
+| 18 | Ein Ei spielt mit vier Bienen Fußball. | Ei, Vier Bienen, Fußball |
+| 19 | Die Ziege leiht dem Schwein einen Hut. | Ziege, Schwein, Hut |
+| 20 | Mein Knie sieht wie ein Spiegelei aus. | Knie, Spiegelei |
+| 21 | Auf diese Weise liegt der weiße Ball auf einer Wiese. | Weißer Ball, Wiese |
+| 22 | Viele Fliegen fliegen fleißig auf der Seite. | Fliegen, Seite |
+| 23 | Das Schwein ist fein rein und kommt zur Tür herein. | Schwein, Tür |
+| 24 | Die Ziege trägt ein Kleid aus Seide und hüpft auf die andere Seite. | Ziege, Seidenkleid |
+
+Übernahme-Nachweis mit Quellenprüfsumme: `EI_IE_UEBERNAHME.json`. Alle vier automatisierten Prüfprogramme wurden für diese Erweiterung erneut erfolgreich ausgeführt; sie prüfen insbesondere die unveränderten Daten beider Kartensätze, alle 82 Treffer und die Wiederaufnahme alter und neuer Spielstände. Reale Geräteprüfungen bleiben offen.
+
 ## 1. Lesen und im Bild suchen
 
-Zehn Lesekarten und zehn zugeordnete Illustrationen sind eingebaut. Zuerst erscheint die Lesekarte. Erst nach dem Button **„gelesen“** wird das Suchbild sichtbar. Über den farbigen Kästchen steht **„Suche“**; das gelb hervorgehobene Kästchen bezeichnet das aktuell gesuchte Element, gefundene Elemente werden grün. Der frühere sichtbare Suchhinweis unter dem Bild ist entfernt; eine Rückmeldung für Vorlesehilfen bleibt erhalten.
+24 Lesekarten und 24 zugeordnete Illustrationen sind eingebaut. Zuerst erscheint die Lesekarte. Erst nach dem Button **„gelesen“** wird das Suchbild sichtbar. Über den farbigen Kästchen steht **„Suche“**; das gelb hervorgehobene Kästchen bezeichnet das aktuell gesuchte Element, gefundene Elemente werden grün. Der frühere sichtbare Suchhinweis unter dem Bild ist entfernt; eine Rückmeldung für Vorlesehilfen bleibt erhalten.
 
-Die Nutzerin hat die Trefferflächen und Endpositionen der Sterne selbst bearbeitet und als Sicherungen übergeben. Der veröffentlichte Stand enthält **34 Trefferflächen**, davon **14 mit ausdrücklich gespeicherter Sternposition**; die übrigen Sterne verwenden die Feldmitte. Richtige Treffer lösen einen großen gold-weißen Funkenregen aus. Anschließend bleibt ein goldener Stern an der festgelegten Stelle stehen. Ein Objekt wird nicht mehrfach gezählt. Nach zehn Karten erscheint ein Abschluss mit „Noch eine Runde“.
+Die Nutzerin hat die Trefferflächen und Endpositionen der Sterne selbst bearbeitet und als Sicherungen übergeben. Der veröffentlichte Stand enthält **82 Trefferflächen**, davon **25 mit ausdrücklich gespeicherter Sternposition**; die übrigen Sterne verwenden die Feldmitte. Richtige Treffer lösen einen großen gold-weißen Funkenregen aus. Anschließend bleibt ein goldener Stern an der festgelegten Stelle stehen. Ein Objekt wird nicht mehrfach gezählt. Nach 24 Karten erscheint ein Abschluss mit „Noch eine Runde“.
 
 | Karte | Inhalt | Suchaufträge |
 |---|---|---|
@@ -37,7 +62,7 @@ Die Nutzerin hat die Trefferflächen und Endpositionen der Sterne selbst bearbei
 
 **Verbindliche Bildentscheidungen:** Das eigene Schweinchenbild der Nutzerin bleibt auf Karte 5; der Text wurde ausdrücklich von sieben auf **acht Schweine** geändert. Das ausgewählte eigene Bienenbild bleibt auf Karte 7. Karte 2 verwendet die zuletzt gelieferte Fassung **„Biene-Beine für Wortdetektive.png“**, um die Verwechslungsgefahr durch viele Blumen zu verringern. Klickflächen und Sternpositionen wurden bei diesem Bildtausch übernommen. Die übrigen acht Illustrationen stammen aus **Buchstaben_Detektiv_10_Grundbilder.zip**. Die frühere Dokumentationslücke zu fehlenden Bildern ist damit für den aktuellen Stand erledigt.
 
-**Kein Editor im Spiel:** Editor, Kartenauswahl und JSON-/HTML-Sicherungen sind vollständig aus der veröffentlichten Bildsuche entfernt. Die getrennte lokale Bearbeitungsvorschau bleibt erhalten. Die Datei `Buchstaben-Detektive_Vorschau_2026-11-01/START_Spielvorschau_Neues_Biene_Beine_Bild.html` enthält weiterhin den Editor und dieselben Bildkarten-, Trefferflächen- und Sternpositionsdaten wie die veröffentlichte App; dieser Datenabgleich wurde für die Dokumentation bestätigt. Sie ist eine separate Arbeitsdatei und kein Bestandteil der Kinderoberfläche.
+**Kein Editor im Spiel:** Editor, Kartenauswahl und JSON-/HTML-Sicherungen sind vollständig aus der veröffentlichten Bildsuche entfernt. Die getrennte lokale Bearbeitungsvorschau bleibt erhalten. Die Datei `Buchstaben-Detektive_Vorschau_2026-11-01/START_Spielvorschau_Neues_Biene_Beine_Bild.html` enthält weiterhin den Editor und die ursprünglichen zehn Bildkarten mit ihren Trefferflächen und Sternpositionen; dieser Datenabgleich wurde für die Dokumentation bestätigt. Sie ist eine separate Arbeitsdatei und kein Bestandteil der Kinderoberfläche.
 
 ## 2. Was zischt denn da?
 
@@ -90,14 +115,14 @@ Die bestehende Zoomfunktion wurde nicht eingeschränkt: keine Sperre durch `user
 
 Automatisierte Prüfungen im maßgeblichen Spielcode-Stand bestanden:
 
-- `tests/check.cjs`: beide Spiele, unveränderte Bild-/Treffer-/Sternpositionsdaten, alle 34 Treffer, Bildfreigabe, 59 Sortierwörter, alle 20 Paare in beiden Fragerichtungen, Bestätigungen, Timer/Überspringen, Abschluss, Verlinkung und profilbezogene Wiederaufnahme.
+- `tests/check.cjs`: beide Spiele, unveränderte Bild-/Treffer-/Sternpositionsdaten, alle 82 Treffer, Bildfreigabe, 59 Sortierwörter, alle 20 Paare in beiden Fragerichtungen, Bestätigungen, Timer/Überspringen, Abschluss, Verlinkung und profilbezogene Wiederaufnahme.
 - `tests/intro.cjs`: Videozuordnung, drei Sekunden Schlussbild, Ende/Überspringen/Abbruch, blockierte Wiedergabe und Ladefehler.
 - `tests/platform.cjs`: Profilanlage und -wahl, getrennte Fortschritte, gesperrter Speicher, Installationsereignis, iPhone-Anleitung und kontrollierte Aktualisierung.
 - `tests/offline.cjs`: Dateien des Offline-Pakets, Navigation ohne Netz, Video-Teilabrufe und Schutz der Caches anderer Apps.
 
 Auf der veröffentlichten Seite wurden in den vorausgegangenen Arbeitsschritten zusätzlich Profilauswahl, Aktualisieren, Offline-Bereitmeldung, Videostart und Übergang, Bildfreigabe, Lautübungen, Rückmeldungen und automatischer Aufgabenwechsel beobachtet. Hochformat-Messungen erfolgten unter anderem bei 390 × 844 und 820 × 1180, Querformat bei 1280 × 720 bzw. 1180 × 820. Das aktuelle Hintergrundbild wurde mit seiner tatsächlichen Auflösung im Browser bestätigt und die wesentlichen Bildteile wurden in beiden Ausrichtungen geprüft.
 
-Diese Dokumentationsaktualisierung liest Repository-/Seitenstatus und lokale Dateien zurück. Die genannten Spielprüfungen stammen aus den vorausgegangenen Implementierungsschritten; sie wurden für die reine Dokumentationspflege nicht unnötig erneut ausgeführt.
+Für die Ei/ie-Erweiterung wurden alle vier Prüfprogramme erneut erfolgreich ausgeführt. Die früheren Browserbeobachtungen belegen die Grundfunktionen; die neue Erweiterung wird zusätzlich über Datenabgleich und simulierte Spieleingaben geprüft.
 
 **Weiter offen:** vollständige Installation auf realem Android und iPhone/iPad, tatsächlicher Offline-Neustart nach Installation, Prüfung mit echten Geräten einschließlich Touch/Pinch-Zoom und Sprachausgabe sowie didaktische/redaktionelle Endfreigabe. Die Rückmeldung der Nutzerin zum passenden Querformat ist ein Nutzungsbericht, kein vollständiger geräteübergreifender Testnachweis.
 
@@ -105,7 +130,7 @@ Diese Dokumentationsaktualisierung liest Repository-/Seitenstatus und lokale Dat
 
 | Aufgabe | Stand | Bedeutung |
 |---|---|---|
-| BD-01 – Materialien und Quellstand zuordnen | Für den aktuellen Stand erledigt | Alle zehn Bilder, aktuelle Sicherungen und Repository zugeordnet. Eine lückenlose ursprüngliche Chat-Historie wurde damit nicht rekonstruiert. |
+| BD-01 – Materialien und Quellstand zuordnen | Für den aktuellen Stand erledigt | Alle 24 Bilder, aktuelle Sicherungen und Repository zugeordnet. Eine lückenlose ursprüngliche Chat-Historie wurde damit nicht rekonstruiert. |
 | BD-02 – Fortführung/Einsatz entscheiden | Erledigt für diese App | Eigenständige Weiterentwicklung und Veröffentlichung ausdrücklich beauftragt und umgesetzt. Keine Integration in die große App beschlossen. |
 | BD-03 – Reale Geräte-/Installationsprüfung | Offen | Android und iPhone/iPad: installieren, aktualisieren, offline neu starten, Touch/Zoom und Vorlesen prüfen; Profile erhalten. |
 | BD-04 – Inhaltliche Endfreigabe | Offen | Lesetexte, Lautzuordnungen, Bilder, Trefferflächen und Sternpositionen in einem vollständigen Durchlauf abnehmen. |

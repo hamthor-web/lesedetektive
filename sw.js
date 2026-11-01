@@ -1,8 +1,8 @@
 'use strict';
-const VERSION = '2026.11.01.4';
+const VERSION = '2026.11.01.5';
 const PREFIX = 'lesedetektive-offline-';
 const CACHE = PREFIX + VERSION;
-const FILES = ['index.html','lesen.html','laute.html','icon.svg','app.css','profiles.js','pwa.js','intro.js','manifest.webmanifest','version.json','assets/intro-lesen.mp4','assets/intro-zischlaute.mp4','assets/icon-192.png','assets/icon-512.png','assets/apple-touch-icon.png','assets/startbildschirm.png'];
+const FILES = ["index.html","lesen.html","laute.html","icon.svg","app.css","profiles.js","pwa.js","intro.js","manifest.webmanifest","version.json","assets/intro-lesen.mp4","assets/intro-zischlaute.mp4","assets/icon-192.png","assets/icon-512.png","assets/apple-touch-icon.png","assets/startbildschirm.png","assets/suchbilder/01.png","assets/suchbilder/02.png","assets/suchbilder/03.png","assets/suchbilder/04.png","assets/suchbilder/05.png","assets/suchbilder/06.png","assets/suchbilder/07.png","assets/suchbilder/08.png","assets/suchbilder/09.png","assets/suchbilder/10.png","assets/suchbilder/11.png","assets/suchbilder/12.png","assets/suchbilder/13.png","assets/suchbilder/14.png","assets/suchbilder/15.png","assets/suchbilder/16.png","assets/suchbilder/17.png","assets/suchbilder/18.png","assets/suchbilder/19.png","assets/suchbilder/20.png","assets/suchbilder/21.png","assets/suchbilder/22.png","assets/suchbilder/23.png","assets/suchbilder/24.png"];
 const base = self.registration.scope;
 const key = path => new URL(path, base).href;
 async function tell(data) { for (const client of await self.clients.matchAll({ includeUncontrolled:true, type:'window' })) client.postMessage(data); }

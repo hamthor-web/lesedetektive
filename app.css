@@ -95,3 +95,6 @@
 @media (orientation:landscape) and (max-height:540px){
   .welcome-controls{padding:12px}.profile-welcome .profile-panel{padding:16px;font-size:16px}.profile-welcome .profile-panel h2{font-size:23px}.profile-welcome .profile-panel p{margin:8px 0}.profile-welcome .profile-install{margin-top:12px;padding-top:12px}
 }
+
+/* The expanded 24-card round keeps progress dots inside small screens. */
+.page-reading .game-progress{flex-wrap:wrap}
