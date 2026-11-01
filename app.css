@@ -98,3 +98,16 @@
 
 /* The expanded 24-card round keeps progress dots inside small screens. */
 .page-reading .game-progress{flex-wrap:wrap}
+
+/* Keep the controls at a usable size while enlarging the complete work area. */
+.zoom-controls{position:sticky;top:max(6px,env(safe-area-inset-top));left:6px;z-index:200;display:flex;align-items:center;justify-content:center;gap:6px;width:max-content;max-width:100%;margin:8px auto;padding:6px 10px;border:1px solid #becfc7;border-radius:16px;background:#fffffff5;box-shadow:0 3px 14px #203d4218;color:#203d42;font:16px/1.2 system-ui,sans-serif;isolation:isolate}
+.zoom-controls span{font-weight:650;margin-right:2px}.zoom-controls button{flex:none;min-width:44px;min-height:44px;margin:0;padding:8px;border:1px solid #bed0c5;border-radius:10px;background:#fff;color:#203d42;font:700 21px/1.2 system-ui,sans-serif;cursor:pointer;touch-action:manipulation}.zoom-controls [data-zoom="reset"]{min-width:78px;font-size:16px}.zoom-controls button:focus-visible{outline:3px solid #c48a20;outline-offset:2px}.zoom-controls button:disabled{opacity:.4;cursor:default}
+body>main,.profile-welcome .profile-panel,.praise-card{zoom:var(--app-zoom,1)}
+html[data-app-zoomed] body>main{min-width:min(100vw,980px)}
+html[data-app-zoomed] .page-home main{min-width:min(48vw,650px)}
+.profile-welcome .welcome-controls{display:block;overflow:auto}.welcome-controls>.zoom-controls{margin:0 auto 16px}.profile-welcome .profile-panel{margin:0 auto;overflow:visible}
+@media(orientation:portrait){html[data-app-zoomed] .page-home main{min-width:100vw}}
+@media print{.zoom-controls{display:none}}
+body.page-reading>main{width:min(100vw,980px)}body.page-laute>main{width:min(100vw,740px)}
+@media(orientation:portrait){body.page-reading>main,body.page-laute>main{width:min(100vw,1100px)}}
+#introDialog>:not(.zoom-controls){zoom:var(--app-zoom,1)}

@@ -147,3 +147,8 @@ Aktueller lokaler Pflegeort des Spielcodes ist `lesedetektive/`. Die neue Gesamt
 ## Zufällige Kartenfolge · Version 2026.11.01.6
 
 Jede neue Leserunde mischt alle 24 Karten nach dem Zufallsprinzip. Jede Karte kann zuerst erscheinen; innerhalb einer Runde kommt jede Karte genau einmal vor. Die Reihenfolge wird je Profil zusammen mit den Treffern gespeichert und beim Fortsetzen wiederhergestellt. Bestehende Spielstände behalten die aktuelle Karte und bereits bearbeitete Karten; noch ausstehende Karten werden gemischt.
+
+
+## Zoom auf allen Seiten · Version 2026.11.01.7
+
+Eine gemeinsame Zoomleiste mit Minus, Prozentanzeige/Zurücksetzen und Plus vergrößert oder verkleinert die gesamte Arbeitsfläche einschließlich Lesekarten, Suchbildern und Lautübungen. Bereich: 75 bis 200 Prozent. Die Einstellung bleibt auf diesem Gerät bei Seitenwechsel und Neustart gespeichert. Auch Profilauswahl und Videobegrüßung haben eigene erreichbare Bedienelemente. Bei vergrößerten Arbeitsflächen ist Scrollen möglich; Trefferflächen bleiben am Bild ausgerichtet. Die vorhandene Browser-/Zweifinger-Zoomfunktion bleibt erlaubt. Zusätzliche Prüfung: `node tests/zoom.cjs`.
