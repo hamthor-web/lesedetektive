@@ -1,6 +1,6 @@
 # Lesedetektive
 
-**Projektunterlagen fortgeschrieben: 01.11.2026 · App-Version 2026.11.01.5.** Vollständige Entscheidungen, Quellen und offene Aufgaben: [PROJEKTSTAND.md](PROJEKTSTAND.md).
+**Projektunterlagen fortgeschrieben: 01.11.2026 · App-Version 2026.11.01.7.** Vollständige Entscheidungen, Quellen und offene Aufgaben: [PROJEKTSTAND.md](PROJEKTSTAND.md).
 
 Zwei Spiele unter einer gemeinsamen Spielauswahl:
 

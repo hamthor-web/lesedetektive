@@ -1,6 +1,6 @@
 # Z2 – Lesedetektive
 
-Dokumentationsstand: **01.11.2026** · veröffentlichte Web-App: **2026.11.01.5**
+Dokumentationsstand: **01.11.2026** · veröffentlichte Web-App: **2026.11.01.7**
 
 Die frühere Projektbezeichnung **Buchstaben-Detektive** wird unter der bestehenden Kennung **Z2** als **Lesedetektive** fortgeführt. Es handelt sich um eine eigenständige App mit zwei Spielen. Sie wurde nicht in die große Spielesammlung integriert. Deren Profilauswahl diente als Gestaltungs- und Funktionsreferenz.
 
@@ -9,8 +9,8 @@ Die frühere Projektbezeichnung **Buchstaben-Detektive** wird unter der bestehen
 | Spieladresse | https://hamthor-web.github.io/lesedetektive/ |
 | Repository | https://github.com/hamthor-web/lesedetektive |
 | Branch | main |
-| Maßgeblicher Spielcode | main, App-Version 2026.11.01.5 |
-| Versionsdatei | version.json: 2026.11.01.5; gleiche Versionsnummer in pwa.js und sw.js |
+| Maßgeblicher Spielcode | 03bda039ab86b35e3f49c9070e9bd63e630e4de8 |
+| Versionsdatei | version.json: 2026.11.01.7; gleiche Versionsnummer in pwa.js und sw.js |
 | Veröffentlichung | GitHub Pages, Aufbau erfolgreich; Repository und Seitenstatus für diese Dokumentation zurückgelesen |
 | Plattform | Installierbare Web-App mit Offline-Paket; keine APK-/App-Store-Veröffentlichung |
 
@@ -20,7 +20,7 @@ Der genannte Commit bezeichnet den letzten Spielcode-Stand. Eine nachfolgende re
 
 Die freigegebene Arbeitsfassung wurde aus `Ei_Ie_Arbeitsfassung_Sicherung.json` übernommen. Die 14 neuen Karten folgen als Karten 11–24 auf die bisherigen zehn Karten. Insgesamt: **24 Bilder, 82 Trefferflächen und 25 ausdrücklich gesetzte Sternpositionen**. Die neuen 48 Flächen und elf Sternpositionen bleiben unverändert. Bilder sind bytegleich als separate Dateien gespeichert. Der Editor bleibt in der getrennten Arbeitsfassung.
 
-Bereits abgeschlossene Zehner-Runden setzen bei Karte 11 fort. Laufende Spielstände bleiben erhalten. Alle 24 Bilder sind im Offline-Paket enthalten. Nach der Veröffentlichung auf der Startseite „Aktualisieren“ wählen und den vollständigen Download abwarten.
+Bereits abgeschlossene Zehner-Runden setzen bei einer der neuen Karten 11–24 fort. Laufende Spielstände bleiben erhalten. Alle 24 Bilder sind im Offline-Paket enthalten. Nach der Veröffentlichung auf der Startseite „Aktualisieren“ wählen und den vollständigen Download abwarten.
 
 | Neue Karte | Lesetext | Suchwörter |
 |---|---|---|
@@ -60,7 +60,7 @@ Die Nutzerin hat die Trefferflächen und Endpositionen der Sterne selbst bearbei
 | 9 | Fiep – Feip / Der Fiep sitzt auf einem Stein. | Fiep, Stein |
 | 10 | Mini-Geschichte mit Mia, Fisch, Sieb und Eis | Fisch, Sieb, Eis |
 
-**Verbindliche Bildentscheidungen:** Das eigene Schweinchenbild der Nutzerin bleibt auf Karte 5; der Text wurde ausdrücklich von sieben auf **acht Schweine** geändert. Das ausgewählte eigene Bienenbild bleibt auf Karte 7. Karte 2 verwendet die zuletzt gelieferte Fassung **„Biene-Beine für Wortdetektive.png“**, um die Verwechslungsgefahr durch viele Blumen zu verringern. Klickflächen und Sternpositionen wurden bei diesem Bildtausch übernommen. Die übrigen acht Illustrationen stammen aus **Buchstaben_Detektiv_10_Grundbilder.zip**. Die frühere Dokumentationslücke zu fehlenden Bildern ist damit für den aktuellen Stand erledigt.
+**Verbindliche Bildentscheidungen:** Das eigene Schweinchenbild der Nutzerin bleibt auf Karte 5; der Text wurde ausdrücklich von sieben auf **acht Schweine** geändert. Das ausgewählte eigene Bienenbild bleibt auf Karte 7. Karte 2 verwendet die zuletzt gelieferte Fassung **„Biene-Beine für Wortdetektive.png“**, um die Verwechslungsgefahr durch viele Blumen zu verringern. Klickflächen und Sternpositionen wurden bei diesem Bildtausch übernommen. Die übrigen sieben ursprünglichen Illustrationen stammen aus **Buchstaben_Detektiv_10_Grundbilder.zip**. Die frühere Dokumentationslücke zu fehlenden Bildern ist damit für den aktuellen Stand erledigt.
 
 **Kein Editor im Spiel:** Editor, Kartenauswahl und JSON-/HTML-Sicherungen sind vollständig aus der veröffentlichten Bildsuche entfernt. Die getrennte lokale Bearbeitungsvorschau bleibt erhalten. Die Datei `Buchstaben-Detektive_Vorschau_2026-11-01/START_Spielvorschau_Neues_Biene_Beine_Bild.html` enthält weiterhin den Editor und die ursprünglichen zehn Bildkarten mit ihren Trefferflächen und Sternpositionen; dieser Datenabgleich wurde für die Dokumentation bestätigt. Sie ist eine separate Arbeitsdatei und kein Bestandteil der Kinderoberfläche.
 
@@ -109,7 +109,7 @@ Bei späteren Spielcode-Änderungen die Versionsnummern in `version.json`, `pwa.
 
 Die Arbeitsflächen im Hochformat verwenden größere Wörter und Schaltflächen, mehr Abstand und eine bessere Verteilung über die verfügbare Höhe. Längere Inhalte bleiben scrollbar. Die Arbeitsflächen-Anpassungen gelten nur für Hochformat; die zuvor von der Nutzerin als passend gemeldete Querformat-Darstellung auf Android-Tablet und iPad bleibt erhalten. Die Eröffnungsseite hat zusätzlich die oben beschriebene eigene Bildanordnung je Ausrichtung.
 
-Die bestehende Zoomfunktion wurde nicht eingeschränkt: keine Sperre durch `user-scalable=no` oder `maximum-scale`, keine neu eingeführte Touch-Blockierung. Die Bildsuche behält ihre vorhandenen Touch-Einstellungen.
+Die bestehende Zoomfunktion wurde nicht eingeschränkt: keine Sperre durch `user-scalable=no` oder `maximum-scale`, keine neu eingeführte Touch-Blockierung. Die Bildsuche behält ihre vorhandenen Touch-Einstellungen. Zusätzlich ist die unten beschriebene gemeinsame Zoomleiste auf allen Seiten verfügbar.
 
 ## 6. Nachweise und Grenzen der Prüfung
 
@@ -122,7 +122,7 @@ Automatisierte Prüfungen im maßgeblichen Spielcode-Stand bestanden:
 
 Auf der veröffentlichten Seite wurden in den vorausgegangenen Arbeitsschritten zusätzlich Profilauswahl, Aktualisieren, Offline-Bereitmeldung, Videostart und Übergang, Bildfreigabe, Lautübungen, Rückmeldungen und automatischer Aufgabenwechsel beobachtet. Hochformat-Messungen erfolgten unter anderem bei 390 × 844 und 820 × 1180, Querformat bei 1280 × 720 bzw. 1180 × 820. Das aktuelle Hintergrundbild wurde mit seiner tatsächlichen Auflösung im Browser bestätigt und die wesentlichen Bildteile wurden in beiden Ausrichtungen geprüft.
 
-Für die Ei/ie-Erweiterung wurden alle vier Prüfprogramme erneut erfolgreich ausgeführt. Die früheren Browserbeobachtungen belegen die Grundfunktionen; die neue Erweiterung wird zusätzlich über Datenabgleich und simulierte Spieleingaben geprüft.
+Für die Ei/ie-Erweiterung wurden alle vier bisherigen Prüfprogramme erneut erfolgreich ausgeführt. Für Zufallsfolge und Zoom wurden zusätzlich die Speicherung, Kartenabdeckung und Wiederaufnahme geprüft; `tests/zoom.cjs` prüft Größenstufen, Grenzen, Zurücksetzen, Synchronisierung, Seitenanbindung und gesperrten Speicher. Im Browser wurde die Zoomversion nach dem Aktualisieren im Hochformat 820 × 1180 geprüft: Die Arbeitsfläche wächst von 820 auf 902 Pixel bei 110 %, Bild und Trefferflächen bleiben deckungsgleich; 110 % bleibt beim Wechsel von Bildsuche zu Lautübungen erhalten. Anschließend wurde auf 100 % zurückgesetzt. Die früheren Browserbeobachtungen belegen die Grundfunktionen; die neue Erweiterung wird zusätzlich über Datenabgleich und simulierte Spieleingaben geprüft.
 
 **Weiter offen:** vollständige Installation auf realem Android und iPhone/iPad, tatsächlicher Offline-Neustart nach Installation, Prüfung mit echten Geräten einschließlich Touch/Pinch-Zoom und Sprachausgabe sowie didaktische/redaktionelle Endfreigabe. Die Rückmeldung der Nutzerin zum passenden Querformat ist ein Nutzungsbericht, kein vollständiger geräteübergreifender Testnachweis.
 
@@ -139,7 +139,7 @@ Die Verwendung der beiden gelieferten Würstchenvideos ist für diese App umgese
 
 ## 8. Quellen und Einordnung
 
-Grundlagen sind die Nutzerentscheidungen und bereitgestellten Materialien dieses Entwicklungsverlaufs, der referenzierte Chat „Bildzuordnungssätze auflisten“ (6ae63cfd-8698-83eb-a023-addf8092b227), die vorhandene CH-/SCH-Testversion, die beiden nutzerbearbeiteten JSON-Sicherungen, das Grundbilder-ZIP, die einzeln gewählten Bilddateien, die Word-Wortpaare und die beiden MP4-Dateien. Die Verwaltungsgrundlage für die Einordnung in die Gesamtübersicht ist `Lesespiele_Projektverwaltung_90_Saetze_3_Bildpakete_2026-10-31.zip`.
+Grundlagen sind die Nutzerentscheidungen und bereitgestellten Materialien dieses Entwicklungsverlaufs, der referenzierte Chat „Bildzuordnungssätze auflisten“ (6ae63cfd-8698-83eb-a023-addf8092b227), die vorhandene CH-/SCH-Testversion, die beiden nutzerbearbeiteten JSON-Sicherungen, das Grundbilder-ZIP, die einzeln gewählten Bilddateien, die Word-Wortpaare und die beiden MP4-Dateien. Hinzu kommen „Lesesätze mit ei und ie.docx“ und die freigegebene „Ei_Ie_Arbeitsfassung_Sicherung.json“ (SHA-256 und Übernahmedetails in `EI_IE_UEBERNAHME.json`). Die Verwaltungsgrundlage für die Einordnung in die Gesamtübersicht ist `Lesespiele_Projektverwaltung_90_Saetze_3_Bildpakete_2026-10-31.zip`.
 
 Aktueller lokaler Pflegeort des Spielcodes ist `lesedetektive/`. Die neue Gesamtverwaltung schreibt Z2 fort und erhält die anderen 17 Mastereinträge und deren Materialien. Deren technische Stände wurden in dieser Runde nicht neu geprüft. Ältere Projektakten und Vorschauen bleiben als Historie erhalten; sie haben bei den hier ausdrücklich aktualisierten Punkten keinen Vorrang vor diesem Stand.
 
