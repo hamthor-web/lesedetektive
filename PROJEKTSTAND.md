@@ -7,3 +7,7 @@ Bestätigt: zehn Bildkarten; Karte 5 acht Schweine; Karte 7 drei Bienen; Karte 2
 Zweites Spiel: CH/SCH-Sortierung mit 35 Wörtern und fünf CH-Wortfamilien als weitere Übung. Alle vorhandenen Lautübungen bleiben zugänglich. Historische Symbol-Bildsuche wird nicht als zusätzliches Spiel angeboten.
 
 BD-01: Material für aktuelle Fassung zusammengeführt. BD-02: Veröffentlichung im oben genannten eigenständigen Repository durch Nutzerauftrag freigegeben. BD-03: vollständige Geräte-/Touch-/Vorlesestimmenprüfung und didaktische Endfreigabe weiter offen.
+
+## CH-Erweiterung
+
+15 Wortpaare aus der bereitgestellten Word-Datei hinzugefügt; insgesamt 20 Paare und 59 Sortierwörter. Abfrage zufällig nach Ich- oder Ach-Laut, passende Antwortauswertung und Rückmeldung.

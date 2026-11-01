@@ -15,10 +15,17 @@ let count=0;for(let i=0;i<10;i++){
 }assert.equal(count,34);
 read.$('completeNext').onclick();assert.equal(read.$('roundComplete').classList.contains('hidden'),false);assert.ok(read.$('searchPanel').classList.contains('hidden'));read.$('newRound').onclick();assert.equal(read.run('index'),0);assert.ok(read.$('roundComplete').classList.contains('hidden'));
 read.$('search').onclick();read.$('backToReading').onclick();assert.equal(read.$('readingCard').classList.contains('hidden'),false);assert.ok(read.$('searchPanel').classList.contains('hidden'));
-const sound=load('laute.html');sound.run('startSort()');assert.equal(sound.run('queue.length'),35);
-for(let i=0;i<35;i++){const target=sound.run('queue[qi][1]');sound.run('answer('+JSON.stringify(target==='sh'?'soft':'sh')+')');assert.equal(sound.run('locked'),false);sound.run('answer('+JSON.stringify(target)+')');assert.equal(sound.run('locked'),true);sound.run('advance()')}
+const sound=load('laute.html');sound.run('startSort()');assert.equal(sound.run('queue.length'),59);
+assert.equal(sound.run('new Set(queue.map(p=>p[0])).size'),59);
+for(let i=0;i<59;i++){const target=sound.run('queue[qi][1]');sound.run('answer('+JSON.stringify(target==='sh'?'soft':'sh')+')');assert.equal(sound.run('locked'),false);sound.run('answer('+JSON.stringify(target)+')');assert.equal(sound.run('locked'),true);sound.run('advance()')}
 assert.ok(sound.$('newcontent').innerHTML.includes('Alles entdeckt!'));
-sound.run('startFamily()');assert.equal(sound.run('families.length'),5);for(let i=0;i<5;i++){sound.run('familyAnswer(0)');assert.equal(sound.run('locked'),false);sound.run('familyAnswer(1)');assert.equal(sound.run('locked'),true);sound.run('advance()')}
+assert.equal(sound.run('families.length'),20);
+const extra=[['Strauch','Sträucher'],['flach','Fläche'],['Fach','Fächer'],['Nacht','Nächte'],['acht','echt'],['wachen','Wächter'],['lachen','lächeln'],['Sprache','sprechen'],['schwach','schwächer'],['wach','weich'],['Rauch','räuchern'],['Tuch','Tücher'],['Kuchen','Küche'],['brauchen','Bräuche'],['kochen','Köche']];
+assert.deepStrictEqual(JSON.parse(sound.run('JSON.stringify(families.slice(5))')),extra);
+for(const ask of ['ich','ach']){
+ sound.run('Math.random=()=>'+(ask==='ich'?'.25':'.75')+';startFamily()');
+ for(let i=0;i<20;i++){assert.equal(sound.run('familyQuestion'),ask);assert.ok(sound.$('newcontent').innerHTML.includes('wie in <strong>'+ask+'</strong>'));assert.ok(!sound.$('newcontent').innerHTML.includes('undefined'));const correct=ask==='ich'?1:0;sound.run('familyAnswer('+(1-correct)+')');assert.equal(sound.run('locked'),false);assert.equal(sound.run('familyQuestion'),ask);sound.run('familyAnswer('+correct+')');assert.equal(sound.run('locked'),true);assert.ok(sound.$('feedback').textContent.includes(ask==='ich'?'Ich':'Ach'));sound.run('advance()')}
+}
 assert.ok(sound.$('newcontent').innerHTML.includes('Alles entdeckt!'));sound.run('home()');assert.equal(sound.$('menu').classList.contains('hidden'),false);
 for(const file of ['index.html','lesen.html','laute.html']){const html=fs.readFileSync(path.join(dir,file),'utf8');for(const match of html.matchAll(/href="([^"#]+)"/g)){const url=match[1];if(!url.includes(':'))assert.ok(fs.existsSync(path.join(dir,url)),'Link fehlt: '+url)}}
-console.log('BESTANDEN: beide Spiele und Navigation; zehn Bilder und alle gespeicherten Daten unverändert; 34 Treffer; Lesefreigabe für jede Karte; 35 Lautwörter einschließlich Fehlversuch; fünf Wortfamilien einschließlich Fehlversuch; Abschluss und Rückkehr; alle lokalen Links.');
+console.log('BESTANDEN: beide Spiele; unveränderte Bilddaten; 34 Treffer; Lesefreigabe; 59 unterschiedliche Sortierwörter; alle 15 neuen Paare; insgesamt 20 Paare jeweils mit Ich- und Ach-Abfrage und Fehlversuchen; kein undefined-Text; Abschluss und Links.');

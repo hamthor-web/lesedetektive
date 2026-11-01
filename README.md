@@ -3,7 +3,7 @@
 Zwei Spiele unter einer gemeinsamen Spielauswahl:
 
 - **Lesen und im Bild suchen**: zehn Lesekarten und Illustrationen. Suchbild erst nach „gelesen“. Acht Schweine und drei Bienen werden einzeln gezählt. Richtige Treffer lösen einen Funkenregen aus; anschließend bleibt ein Stern an der gespeicherten Position.
-- **Was zischt den da**: 35 Wörter nach Ich-Laut, Ach-Laut oder SCH sortieren; zusätzlich fünf CH-Wortfamilien unter „Wie klingt es? – ich oder ach?“. Optionales Vorlesen über Browser-Sprachausgabe.
+- **Was zischt den da**: 59 Wörter nach Ich-Laut, Ach-Laut oder SCH sortieren; zusätzlich 20 CH-Wortpaare unter „Wie klingt es? – ich oder ach?“. Optionales Vorlesen über Browser-Sprachausgabe.
 
 Ohne Zeitlimit oder Punktabzug. Begleitung durch Erwachsene vorgesehen.
 
@@ -28,3 +28,7 @@ Lesekarte, Fortschritt, „gelesen“, Bildsuche und Abschluss. Kein Editor, kei
 ## Würstchen-Begrüßung
 
 Beim Start eines Spiels über die gemeinsame Startseite öffnet sich das zugehörige Würstchenvideo mit Ton und Videosteuerung. Nach Videoende startet das gewählte Spiel automatisch. „Überspringen“ startet sofort; „Spielauswahl“ oder Escape schließt das Video. Falls der Browser die Wiedergabe nicht zulässt, ist „Video starten“ verfügbar. Direkte Spieladressen bleiben ohne vorgeschaltetes Video erreichbar. Beide bereitgestellten MP4-Dateien sind unverändert unter assets/ enthalten.
+
+## Erweiterung CH-Wortpaare
+
+15 bereitgestellte Wortpaare ergänzt (Quelle: „15 Wortpaare mit Ach.docx“). Insgesamt 20 Paare. Pro Paar wird zufällig der Ich- oder Ach-Laut abgefragt. Die Frage bleibt bei einem Fehlversuch gleich. Die zusätzlichen Einzelwörter ergänzen auch die Sortierung; bestehende Wörter werden nicht doppelt aufgenommen. Insgesamt 59 Sortierwörter. Neue Beispielsätze wurden nicht erfunden.
