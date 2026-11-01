@@ -11,9 +11,9 @@ Ohne Zeitlimit oder Punktabzug. Begleitung durch Erwachsene vorgesehen.
 
 [App starten](https://hamthor-web.github.io/lesedetektive/). Alternativ Dateien herunterladen und index.html öffnen. Reine HTML-/JavaScript-App ohne Installation oder Build-Abhängigkeiten. Die Bildsuche enthält die zehn Illustrationen eingebettet; der erste Download ist daher etwa 38 MB groß.
 
-## Editor und Sicherung
+## Bearbeitung
 
-In der Bildsuche lassen sich Trefferflächen und Endpositionen der Sterne bearbeiten und testen. JSON-/HTML-Sicherungen enthalten Bilder und Konfiguration. Änderungen im Editor bleiben bis zum Export im Arbeitsspeicher. Kein automatisches Speichern von Spielständen und keine Erhebung von Nutzerprofilen.
+Die veröffentlichte App enthält ausschließlich die Spiele. Die separate lokale Bearbeitungsvorschau dient zur Pflege der Bilder, Trefferflächen und Sternpositionen.
 
 ## Stand 01.11.2026
 
@@ -23,4 +23,4 @@ Prüfung: node tests/check.cjs. Die Prüfung simuliert Oberfläche und Eingaben;
 
 ## Spieloberfläche
 
-Im Bildspiel sind Lesekarte, Fortschritt, „gelesen“ und Bildsuche sichtbar. Unter „Für Erwachsene“ liegen Kartenauswahl, Trefferflächen-/Sterneditor und Sicherungen. Nach zehn Karten erscheint ein Abschluss mit Neustart. Bilder bleiben bis „gelesen“ verborgen.
+Lesekarte, Fortschritt, „gelesen“, Bildsuche und Abschluss. Kein Editor, keine Kartenauswahl und keine Sicherungsfunktionen im Spiel. Bilder bleiben bis „gelesen“ verborgen.
