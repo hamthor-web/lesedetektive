@@ -7,7 +7,7 @@
   const note = document.getElementById('introNote');
   const routes = {
     'lesen.html': { video: 'assets/intro-lesen.mp4', title: 'Lesen und im Bild suchen' },
-    'laute.html': { video: 'assets/intro-zischlaute.mp4', title: 'Was zischt den da' }
+    'laute.html': { video: 'assets/intro-zischlaute.mp4', title: 'Was zischt denn da?' }
   };
   let destination = null;
   let request = 0;

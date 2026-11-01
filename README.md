@@ -3,7 +3,7 @@
 Zwei Spiele unter einer gemeinsamen Spielauswahl:
 
 - **Lesen und im Bild suchen**: zehn Lesekarten und Illustrationen. Suchbild erst nach „gelesen“. Acht Schweine und drei Bienen werden einzeln gezählt. Richtige Treffer lösen einen Funkenregen aus; anschließend bleibt ein Stern an der gespeicherten Position.
-- **Was zischt den da**: 59 Wörter nach Ich-Laut, Ach-Laut oder SCH sortieren; zusätzlich 20 CH-Wortpaare unter „Wie klingt es? – ich oder ach?“. Optionales Vorlesen über Browser-Sprachausgabe.
+- **Was zischt denn da?**: 59 Wörter nach Ich-Laut, Ach-Laut oder SCH sortieren; zusätzlich 20 CH-Wortpaare unter „Wie klingt es? – ich oder ach?“. Optionales Vorlesen über Browser-Sprachausgabe.
 
 Ohne Zeitlimit oder Punktabzug. Begleitung durch Erwachsene vorgesehen.
 
@@ -55,4 +55,4 @@ Die Arbeitsflächen passen im Hochformat ihre Breite, Mindesthöhe, Abstände un
 
 ## Eröffnungsbild
 
-Die gelieferte Illustration „Lesen und suchen Startbildschirm.png“ liegt als unverändertes Original unter `assets/startbildschirm.png` (1024 × 1536 Pixel). Sie erscheint in der Profilauswahl und auf der Startseite. Im Querformat sind Bild und Bedienung nebeneinander angeordnet; im Hochformat steht der wichtige obere Bildbereich über der Auswahl. Kopf/Krone, Lupe und Schild bleiben frei von Bedienelementen. Der helle Originalhintergrund wird bis zum Bildschirmrand fortgeführt. Das Bild wird proportional dargestellt, nicht verzerrt oder neu komprimiert; das Offline-Paket enthält das Original. Extremes Vergrößern kann die tatsächliche Rasterauflösung nicht erhöhen. Version 2026.11.01.3.
+Die gelieferte Illustration „Lesen und suchen Hintergrund.png“ liegt als unverändertes Original unter `assets/startbildschirm.png` (1792 × 2688 Pixel). Sie erscheint in der Profilauswahl und auf der Startseite. Im Querformat sind Bild und Bedienung nebeneinander angeordnet; im Hochformat steht der wichtige obere Bildbereich über der Auswahl. Kopf/Krone, Lupe und Schild bleiben frei von Bedienelementen. Der helle Originalhintergrund wird bis zum Bildschirmrand fortgeführt. Das Bild wird proportional dargestellt, nicht verzerrt oder neu komprimiert; das Offline-Paket enthält das Original. Extremes Vergrößern kann die tatsächliche Rasterauflösung nicht erhöhen. Version 2026.11.01.4.
