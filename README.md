@@ -20,3 +20,7 @@ In der Bildsuche lassen sich Trefferflächen und Endpositionen der Sterne bearbe
 Nutzerseitige Klickflächen und Sternpositionen übernommen. Neues Biene–Beine-Bild für Karte 2; ausgewählte eigene Bienenillustration für Karte 7 und acht Schweine für Karte 5. CH-/SCH-Wortmaterial und Wortfamilien aus der bisherigen Testversion erhalten.
 
 Prüfung: node tests/check.cjs. Die Prüfung simuliert Oberfläche und Eingaben; sie ersetzt keinen vollständigen Geräte-/Sprachausgabetest.
+
+## Spieloberfläche
+
+Im Bildspiel sind Lesekarte, Fortschritt, „gelesen“ und Bildsuche sichtbar. Unter „Für Erwachsene“ liegen Kartenauswahl, Trefferflächen-/Sterneditor und Sicherungen. Nach zehn Karten erscheint ein Abschluss mit Neustart. Bilder bleiben bis „gelesen“ verborgen.
