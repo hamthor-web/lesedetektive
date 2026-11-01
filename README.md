@@ -3,7 +3,7 @@
 Zwei Spiele unter einer gemeinsamen Spielauswahl:
 
 - **Lesen und im Bild suchen**: zehn Lesekarten und Illustrationen. Suchbild erst nach „gelesen“. Acht Schweine und drei Bienen werden einzeln gezählt. Richtige Treffer lösen einen Funkenregen aus; anschließend bleibt ein Stern an der gespeicherten Position.
-- **Laute entdecken**: 35 Wörter nach Ich-Laut, Ach-Laut oder SCH sortieren; zusätzlich fünf CH-Wortfamilien. Optionales Vorlesen über Browser-Sprachausgabe.
+- **Was zischt den da**: 35 Wörter nach Ich-Laut, Ach-Laut oder SCH sortieren; zusätzlich fünf CH-Wortfamilien unter „Wie klingt es? – ich oder ach?“. Optionales Vorlesen über Browser-Sprachausgabe.
 
 Ohne Zeitlimit oder Punktabzug. Begleitung durch Erwachsene vorgesehen.
 
