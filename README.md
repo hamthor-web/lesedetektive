@@ -1,5 +1,7 @@
 # Lesedetektive
 
+**Projektunterlagen fortgeschrieben: 01.11.2026 · App-Version 2026.11.01.4.** Vollständige Entscheidungen, Quellen und offene Aufgaben: [PROJEKTSTAND.md](PROJEKTSTAND.md).
+
 Zwei Spiele unter einer gemeinsamen Spielauswahl:
 
 - **Lesen und im Bild suchen**: zehn Lesekarten und Illustrationen. Suchbild erst nach „gelesen“. Acht Schweine und drei Bienen werden einzeln gezählt. Richtige Treffer lösen einen Funkenregen aus; anschließend bleibt ein Stern an der gespeicherten Position.
