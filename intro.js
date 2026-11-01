@@ -11,8 +11,11 @@
   };
   let destination = null;
   let request = 0;
+  let holdTimer = null;
 
   function stop() {
+    clearTimeout(holdTimer);
+    holdTimer = null;
     request++;
     video.pause();
     video.removeAttribute('src');
@@ -62,7 +65,14 @@
     });
   });
 
-  video.addEventListener('ended', enterGame);
+  video.addEventListener('ended', () => {
+    if (!destination || holdTimer !== null) return;
+    const current = request;
+    holdTimer = setTimeout(() => {
+      holdTimer = null;
+      if (current === request) enterGame();
+    }, 3000);
+  });
   video.addEventListener('error', () => {
     if (!destination || !video.getAttribute('src')) return;
     start.hidden = true;
