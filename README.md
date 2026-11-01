@@ -24,3 +24,7 @@ Prüfung: node tests/check.cjs. Die Prüfung simuliert Oberfläche und Eingaben;
 ## Spieloberfläche
 
 Lesekarte, Fortschritt, „gelesen“, Bildsuche und Abschluss. Kein Editor, keine Kartenauswahl und keine Sicherungsfunktionen im Spiel. Bilder bleiben bis „gelesen“ verborgen.
+
+## Würstchen-Begrüßung
+
+Beim Start eines Spiels über die gemeinsame Startseite öffnet sich das zugehörige Würstchenvideo mit Ton und Videosteuerung. Nach Videoende startet das gewählte Spiel automatisch. „Überspringen“ startet sofort; „Spielauswahl“ oder Escape schließt das Video. Falls der Browser die Wiedergabe nicht zulässt, ist „Video starten“ verfügbar. Direkte Spieladressen bleiben ohne vorgeschaltetes Video erreichbar. Beide bereitgestellten MP4-Dateien sind unverändert unter assets/ enthalten.
