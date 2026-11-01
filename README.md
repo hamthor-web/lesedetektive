@@ -48,3 +48,7 @@ Der Button „Installieren“ öffnet in unterstützten Android-/Desktop-Browser
 „Aktualisieren“ prüft neue Fassungen. Eine fertig geladene Fassung kann über denselben Button aktiviert werden; erst die bewusste Aktion lädt die App neu. Profile werden dabei nicht gelöscht. Das Offline-Paket enthält beide Spiele, die Bilder und Videos. Video-Teilabrufe werden auch offline unterstützt. Der Service Worker verwaltet ausschließlich Cache-Namen mit `lesedetektive-offline-` und Dateien innerhalb dieser App.
 
 Bei künftigen Veröffentlichungen Versionsnummer in `sw.js`, `pwa.js` und `version.json` gemeinsam erhöhen. Im installierten Spiel die Startseite öffnen und „Aktualisieren“ wählen.
+
+## Hochformat und Zoom
+
+Die Arbeitsflächen passen im Hochformat ihre Breite, Mindesthöhe, Abstände und Schriftgrößen an den Bildschirm an. Längere Inhalte können weiterhin gescrollt werden. Die Anpassungen sind auf `orientation: portrait` begrenzt; die Querformat-Regeln bleiben erhalten. Browserzoom und die bestehenden Touch-Einstellungen werden nicht eingeschränkt. Installierte App: neue Gestaltung über „Aktualisieren“ übernehmen (Version 2026.11.01.2).

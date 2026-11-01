@@ -4,3 +4,69 @@
 .app-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 0;margin-bottom:20px;font-size:15px}.app-tools .profile-current{font-weight:650;color:#21655b}.app-tools .tool-buttons{display:flex;gap:8px;flex-wrap:wrap}.app-tools button{font:inherit;border:1px solid #a9c1b6;border-radius:11px;background:#fffdf5;color:#203d42;padding:9px 12px;min-height:44px;cursor:pointer}.app-tools [data-app-status]{flex-basis:100%;margin:0;font-size:14px;color:#526e63}.profile-badge{display:block;font-size:14px;letter-spacing:0;text-transform:none;color:#62796f;margin:4px 0}button:focus-visible,input:focus-visible{outline:3px solid #b68024;outline-offset:3px}
 @media(min-width:600px) and (max-height:500px){.profile-panel{width:min(680px,calc(100% - 16px));padding:12px 16px;border-radius:16px}.profile-panel form{grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:10px}.profile-panel h2{font-size:1.2em}.profile-panel p{margin:8px 0}.profile-list{margin:8px 0}}
 @supports(padding:env(safe-area-inset-top)){body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}}
+
+/* Portrait workspaces grow with the available screen; landscape stays unchanged.
+   No fixed page heights, page scaling or zoom restrictions: long content can scroll. */
+@media (orientation:portrait){
+  body.page-home,body.page-reading,body.page-laute{padding:0}
+  .page-home main,.page-reading main,.page-laute main.app{
+    box-sizing:border-box;width:100%;max-width:1000px;min-height:100svh;margin:0 auto;
+    padding:clamp(18px,3vw,36px);padding-top:max(clamp(18px,3vw,36px),env(safe-area-inset-top));padding-bottom:max(24px,env(safe-area-inset-bottom));
+    display:flex;flex-direction:column;
+  }
+  .page-laute .top{gap:16px}.page-laute .brand{font-size:clamp(24px,4vw,38px);line-height:1.3}
+  .page-laute .sub{font-size:clamp(16px,2.4vw,23px);white-space:nowrap}
+  .page-laute main.app>p{margin:14px 0;font-size:clamp(17px,2.4vw,23px)}
+  .page-laute #menuButton{align-self:flex-start;font-size:clamp(17px,2.4vw,24px);padding:12px 20px}
+  .page-laute .profile-badge,.page-reading .profile-badge{font-size:clamp(15px,2vw,20px);margin:8px 0}
+  .page-laute #progress{margin:clamp(20px,3svh,36px) 0}.page-laute .progress i{height:clamp(9px,1.2vw,13px)}
+  .page-laute #menu,.page-laute #newgame{
+    flex:1;width:100%;display:flex;flex-direction:column;justify-content:center;
+    min-height:55svh;padding:clamp(24px,4vw,48px);border-radius:clamp(23px,3vw,32px);margin-bottom:20px;
+  }
+  .page-laute #menu h1{font-size:clamp(28px,4.8vw,44px);line-height:1.25;margin:10px 0 18px}
+  .page-laute #menu>p{font-size:clamp(18px,2.8vw,27px);line-height:1.6}
+  .page-laute #menu>div{gap:clamp(18px,2.6svh,30px)!important;margin:20px 0}
+  .page-laute .nav{font-size:clamp(19px,2.9vw,29px);line-height:1.4;padding:clamp(14px,2.4vw,24px);min-height:clamp(54px,7svh,88px);white-space:normal;overflow-wrap:break-word}
+  .page-laute #newcontent{display:flex;flex-direction:column;gap:clamp(14px,2svh,26px);width:100%;min-width:0}
+  .page-laute #newcontent .eyebrow{font-size:clamp(14px,2vw,20px);line-height:1.5}
+  .page-laute #newcontent h2{font-size:clamp(27px,4vw,40px);line-height:1.3;margin:4px 0}
+  .page-laute #newcontent>p,.page-laute .ch-hint{font-size:clamp(18px,2.8vw,27px);line-height:1.6;margin:0}
+  .page-laute #newcontent .readline.small{font-size:clamp(24px,3.6vw,37px);line-height:1.6}
+  .page-laute #newcontent .reading{min-height:clamp(160px,23svh,300px);gap:clamp(20px,3svh,36px);padding:16px 0}
+  .page-laute #newcontent .reading>.readline{font-size:clamp(50px,10vw,100px)!important;overflow-wrap:anywhere}
+  .page-laute .duel{gap:clamp(14px,2.6vw,28px);margin:8px 0}
+  .page-laute .duel button{font-size:clamp(28px,4.8vw,52px)!important;max-width:100%;min-width:0}
+  .page-laute #feedback{font-size:clamp(17px,2.6vw,25px);line-height:1.5;margin:clamp(16px,2.5svh,30px) 0 0;min-height:0}
+  .page-laute #feedback:empty{display:none}.page-laute .helper{font-size:clamp(15px,2.2vw,21px)}
+  .page-laute .praise-card{width:min(760px,100%);padding:clamp(36px,8vw,88px) 24px}
+  .page-laute .praise-card p{font-size:clamp(38px,8vw,76px)}
+
+  .page-reading header h1{font-size:clamp(24px,4vw,38px)}
+  .page-reading #counter{font-size:clamp(15px,2.3vw,23px)}
+  .page-reading nav{margin:16px 0;font-size:clamp(17px,2.4vw,24px)}
+  .page-reading .game-progress{gap:clamp(9px,1.6vw,17px);margin:clamp(18px,3svh,34px) 0}
+  .page-reading .progress-dot{width:clamp(11px,1.7vw,17px);height:clamp(11px,1.7vw,17px)}
+  .page-reading #readingCard{flex:1;width:100%;max-width:none;min-height:55svh;display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,5vw,60px);margin:12px 0 24px}
+  .page-reading #category{font-size:clamp(14px,2.1vw,21px)}
+  .page-reading .reading{font-size:clamp(40px,8vw,84px);line-height:1.65;margin:clamp(24px,4svh,48px) 0;min-height:0;overflow-wrap:break-word}
+  .page-reading .reading.story{font-size:clamp(27px,4.5vw,48px)}
+  .page-reading .read-hint{font-size:clamp(18px,2.6vw,26px);max-width:620px;margin:20px auto 28px}
+  .page-reading #search{align-self:center;font-size:clamp(25px,3.8vw,36px);padding:18px 42px;min-height:66px}
+  .page-reading #searchPanel{width:100%;max-width:none;padding:clamp(12px,2.6vw,28px);margin:12px 0 24px}
+  .page-reading .stage{max-width:none}.page-reading .word,.page-reading .search-label{font-size:clamp(19px,2.8vw,29px)}
+  .page-reading .row button{font-size:clamp(18px,2.5vw,25px);min-height:56px;padding:14px 20px}
+  .page-reading footer{margin-top:auto;font-size:clamp(15px,2.1vw,20px)}
+
+  .page-home main{justify-content:center}.page-home header{margin-bottom:clamp(24px,4svh,50px)}
+  .page-home h1{font-size:clamp(36px,7vw,64px)}.page-home .intro{font-size:clamp(19px,2.8vw,28px);max-width:none}
+  .page-home .games{grid-template-columns:1fr;gap:clamp(20px,3svh,36px)}
+  .page-home .game{padding:clamp(26px,4vw,46px)}.page-home .game h2{font-size:clamp(26px,4vw,38px)}
+  .page-home .game p{font-size:clamp(18px,2.7vw,26px)}.page-home .badge{font-size:clamp(36px,5vw,52px)}
+  .page-home .start{font-size:clamp(19px,2.8vw,27px);padding:13px 24px}
+  .page-home .app-tools{font-size:clamp(16px,2.3vw,23px);gap:16px;margin-bottom:26px}
+  .profile-panel{width:min(640px,calc(100% - 24px));padding:clamp(24px,4vw,42px);font-size:clamp(18px,2.7vw,26px)}
+  .profile-panel h2{font-size:clamp(28px,4.5vw,40px)}.profile-list{gap:clamp(12px,2vw,20px)}
+  .profile-panel input,.profile-panel button{font-size:inherit;padding:clamp(12px,2vw,20px)}
+  .profile-install button{font-size:clamp(17px,2.5vw,24px)}
+}
