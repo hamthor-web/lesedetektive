@@ -22,9 +22,10 @@
 
   const dialog = document.createElement('dialog');
   dialog.id = 'profileDialog';
-  dialog.className = 'profile-panel';
+  dialog.className = 'profile-welcome';
   dialog.setAttribute('aria-labelledby', 'profileHeading');
   dialog.innerHTML = '<h2 id="profileHeading">Wer spielt heute?</h2><p>Jedes Kind hat hier seinen eigenen Spielstand auf diesem Gerät.</p><div class="profile-list"></div><form class="profile-create"><label>Neues Profil <input name="name" maxlength="32" autocomplete="off" enterkeyhint="done" placeholder="Name des Kindes" required></label><button type="submit">Profil anlegen</button></form><p class="profile-error" role="alert"></p><p class="profile-storage" role="status"></p><div class="profile-install"><button type="button" data-app-action="install">Installieren</button><button type="button" data-app-action="update">Aktualisieren</button><p data-app-status role="status" aria-live="polite"></p></div><button type="button" class="profile-cancel" hidden>Zurück</button>';
+  dialog.innerHTML = '<div class="welcome-art" aria-hidden="true"><img src="assets/startbildschirm.png" width="1024" height="1536" alt="" decoding="async" fetchpriority="high"></div><div class="welcome-controls"><div class="profile-panel">' + dialog.innerHTML + '</div></div>';
   document.body.append(dialog);
   const profileList = dialog.querySelector('.profile-list');
   const error = dialog.querySelector('.profile-error');

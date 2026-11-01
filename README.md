@@ -52,3 +52,7 @@ Bei künftigen Veröffentlichungen Versionsnummer in `sw.js`, `pwa.js` und `vers
 ## Hochformat und Zoom
 
 Die Arbeitsflächen passen im Hochformat ihre Breite, Mindesthöhe, Abstände und Schriftgrößen an den Bildschirm an. Längere Inhalte können weiterhin gescrollt werden. Die Anpassungen sind auf `orientation: portrait` begrenzt; die Querformat-Regeln bleiben erhalten. Browserzoom und die bestehenden Touch-Einstellungen werden nicht eingeschränkt. Installierte App: neue Gestaltung über „Aktualisieren“ übernehmen (Version 2026.11.01.2).
+
+## Eröffnungsbild
+
+Die gelieferte Illustration „Lesen und suchen Startbildschirm.png“ liegt als unverändertes Original unter `assets/startbildschirm.png` (1024 × 1536 Pixel). Sie erscheint in der Profilauswahl und auf der Startseite. Im Querformat sind Bild und Bedienung nebeneinander angeordnet; im Hochformat steht der wichtige obere Bildbereich über der Auswahl. Kopf/Krone, Lupe und Schild bleiben frei von Bedienelementen. Der helle Originalhintergrund wird bis zum Bildschirmrand fortgeführt. Das Bild wird proportional dargestellt, nicht verzerrt oder neu komprimiert; das Offline-Paket enthält das Original. Extremes Vergrößern kann die tatsächliche Rasterauflösung nicht erhöhen. Version 2026.11.01.3.

@@ -70,3 +70,28 @@
   .profile-panel input,.profile-panel button{font-size:inherit;padding:clamp(12px,2vw,20px)}
   .profile-install button{font-size:clamp(17px,2.5vw,24px)}
 }
+
+/* The original PNG is never stretched to a different aspect ratio. Its paper
+   colour fills the rest of the viewport instead of cropping the head/sign. */
+.profile-welcome{--welcome-paper:#fafbf6;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--welcome-paper);color:#203d42;overflow:hidden}
+.profile-welcome[open]{display:grid;grid-template-columns:minmax(300px,1fr) minmax(0,1.15fr);grid-template-areas:"controls art"}
+.profile-welcome::backdrop{background:#fafbf6}
+.welcome-art{grid-area:art;position:relative;min-width:0;min-height:0;overflow:hidden;background:#fafbf6;display:flex;align-items:center;justify-content:center}
+.welcome-art img,.home-art img{display:block;width:auto;height:100%;max-width:100%;max-height:1536px;object-fit:contain}
+.welcome-controls{grid-area:controls;min-height:0;min-width:0;overflow-y:auto;overscroll-behavior:contain;display:flex;padding:clamp(16px,3vw,40px)}
+.profile-welcome .profile-panel{width:min(100%,480px);max-height:none;margin:auto;flex-shrink:0;background:#fffffcf5;border:1px solid #dce2d7;box-shadow:0 12px 36px #203d4210}
+.page-home{background:#fafbf6}.home-art{position:fixed;top:0;right:0;width:52vw;height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fafbf6;pointer-events:none;z-index:0}
+.page-home main{position:relative;z-index:1;width:48%;max-width:650px;margin:0;padding:clamp(20px,3vw,42px)}
+.page-home .games{grid-template-columns:1fr}.page-home .game{background:#fffffcf5;padding:clamp(20px,2.3vw,30px)}
+.page-home header{margin-bottom:24px}.page-home h1{font-size:clamp(30px,4vw,48px)}.page-home .intro{margin-bottom:16px}
+@media (orientation:portrait){
+  .profile-welcome[open]{grid-template-columns:1fr;grid-template-rows:min(43svh,650px) minmax(0,1fr);grid-template-areas:"art" "controls"}
+  .welcome-art img,.home-art img{position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(100%,calc(min(43svh,650px) * 1.1),1024px);height:auto;max-width:none;max-height:none}
+  .welcome-controls{padding:12px clamp(12px,2.4vw,28px) max(16px,env(safe-area-inset-bottom));scroll-padding-block:16px}
+  .profile-welcome .profile-panel{width:min(100%,640px);padding:clamp(20px,3vw,34px);border-radius:24px}
+  .page-home .home-art{position:relative;top:auto;right:auto;width:100%;height:min(43svh,650px)}
+  .page-home main{width:100%;max-width:1000px;min-height:0;margin:auto;padding:clamp(20px,3vw,36px)}
+}
+@media (orientation:landscape) and (max-height:540px){
+  .welcome-controls{padding:12px}.profile-welcome .profile-panel{padding:16px;font-size:16px}.profile-welcome .profile-panel h2{font-size:23px}.profile-welcome .profile-panel p{margin:8px 0}.profile-welcome .profile-install{margin-top:12px;padding-top:12px}
+}
