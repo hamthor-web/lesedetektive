@@ -32,3 +32,7 @@ Beim Start eines Spiels über die gemeinsame Startseite öffnet sich das zugehö
 ## Erweiterung CH-Wortpaare
 
 15 bereitgestellte Wortpaare ergänzt (Quelle: „15 Wortpaare mit Ach.docx“). Insgesamt 20 Paare. Pro Paar wird zufällig der Ich- oder Ach-Laut abgefragt. Die Frage bleibt bei einem Fehlversuch gleich. Die zusätzlichen Einzelwörter ergänzen auch die Sortierung; bestehende Wörter werden nicht doppelt aufgenommen. Insgesamt 59 Sortierwörter. Neue Beispielsätze wurden nicht erfunden.
+
+## Bestätigung bei „Wie klingt es?“
+
+Der CH-Hinweis steht direkt unter „Lies beide Wörter“. Richtige Antworten zeigen eine zufällige Bestätigung aus acht Formulierungen auf neutralem Hintergrund; die nächste Aufgabe folgt nach drei Sekunden oder sofort über „Überspringen“. Innerhalb eines gemischten Durchlaufs wiederholen sich die Bestätigungen nicht. Abbruch zur Übungsauswahl beendet den Übergang. Die CH-/SCH-Sortierung bleibt unverändert.
