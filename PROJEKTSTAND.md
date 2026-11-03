@@ -49,3 +49,9 @@ Schmuckbuttons verwenden kleinere, sichere Innenabstände und dürfen ihre Besch
 ## 2026.11.03.8: Dauerhaft Platz für den Bildregler
 
 Die laufende Uhr zeigt Minuten:Sekunden, Ergebnisse behalten die ausgeschriebene Zeit. Der Bildregler beansprucht in der seitlichen Spalte nur seine eigene Höhe. Dies verhindert ein Herausrutschen der Regler bei längeren Zeitrunden.
+
+## 2026.11.03.9: Kindgerechte Schrift und Logo
+
+Profilnamen sind waagerecht und senkrecht im Button zentriert. Das gelieferte PNG wird ohne zeichnerische Veränderung als Logo eingesetzt; lediglich transparente Außenränder wurden entfernt und passende Größen für Favicon, Android, iOS und maskierbare App-Symbole erzeugt. Das bisherige große Begrüßungsbild bleibt erhalten.
+
+Lesewörter beginnen mit 36 px, längere Lesetexte mit 28 px, Fragen mit 24 px, Antwortbuttons mit 28 px und Suchwörter mit 26 px. Suchwörter bleiben unabhängig auf bis zu 52 px vergrößerbar. Die wichtigsten Bedienknöpfe verwenden 18 px. Enge Wortpaare stehen bei Bedarf untereinander. Texte werden nicht automatisch verkleinert; die Aufgabenfläche bleibt scrollbar.

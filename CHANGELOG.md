@@ -64,3 +64,7 @@ Buttonbeschriftungen mit sicherem Innenabstand und Umbruch; unabhängiger wirksa
 ## 2026.11.03.8 – 03.11.2026
 
 Laufende Stoppuhr kompakt in Minuten:Sekunden; dadurch bleibt der Bildzoom auch bei längeren Runden erreichbar. Ergebniszeiten werden weiterhin ausgeschrieben.
+
+## 2026.11.03.9 – 03.11.2026
+
+Profilnamen mittig; neue gelieferte Würstchen-Grafik als Logo und App-/Home-Bildschirm-Symbole. Größere Mindestschriften für Aufgaben, Lesetexte, Antwortbuttons und Suchwörter; Wortpaare können auf schmalen Geräten untereinander stehen.

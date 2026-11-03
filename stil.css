@@ -146,3 +146,33 @@ body.playing.searching-image[data-game="reading"] .word-size-controls{display:gr
 body.playing .round-stats #clock{font-size:24px;white-space:nowrap;overflow-wrap:normal}
 .word-size-controls strong{font-size:inherit}
 @media(orientation:landscape){.round-stats .zoom-controls{flex:0 0 auto;align-self:stretch}}
+
+/* Child-readable task typography takes priority over generic utility buttons. */
+.app-logo{width:54px;height:78px;object-fit:contain;flex:0 0 auto}
+body.playing .app-logo{display:none}
+.profile-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px}
+.profile-brand img{object-fit:contain;flex:0 0 56px}
+#profileDialog .profile-list button{display:flex;align-items:center;justify-content:center;text-align:center;padding:18px 34px;font-size:clamp(24px,6vw,32px);font-weight:800;min-height:76px}
+#profileDialog .profile-panel{font-size:20px}
+#profileDialog .profile-panel input{font-size:22px}
+#home .game-menu>button{font-size:clamp(22px,5.8vw,30px);line-height:1.3;min-height:104px;padding:22px 26px 22px 44px}
+#home .game-menu small{font-size:clamp(19px,4.8vw,24px);line-height:1.3}
+body.choosing>main{height:auto;min-height:calc((100dvh - 76px) / var(--menu-zoom,1));display:grid;grid-template-rows:auto 1fr auto}
+body.choosing #home{min-height:min-content}
+#setup{font-size:20px}
+#setup fieldset label,#setup select{font-size:21px}
+body.playing #task{font-size:22px;line-height:1.5}
+body.playing #task .eyebrow{font-size:18px;letter-spacing:.04em}
+body.playing #task h2{font-size:clamp(28px,6vw,36px)}
+body.playing #task .reading{font-size:clamp(36px,8vw,48px);line-height:1.45}
+body.playing #task .reading.story{font-size:clamp(28px,5.8vw,36px);line-height:1.5}
+body.playing #task .question{font-size:24px;line-height:1.45}
+body.playing #task .answers button,body.playing #task .duel button{font-size:clamp(28px,6vw,36px);line-height:1.35;min-height:78px;padding:18px 24px 18px 36px}
+body.playing #task .duel{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px}
+body.playing #task #hear,body.playing #task #read,body.playing #task #reread,body.playing #task #retryImage{font-size:22px;line-height:1.35;min-height:64px}
+body.playing.searching-image #words{font-size:calc(26px * var(--search-word-scale,1));line-height:1.35}
+body.playing .round-actions button:not(.word-size-controls button){font-size:18px;line-height:1.3;min-height:66px}
+body.playing .round-stats span{font-size:16px}
+body.playing .word-size-controls span{font-size:15px}
+body.playing .word-size-controls strong{font-size:15px}
+@media(max-width:600px){body.playing #task{padding:18px 14px}body.playing.searching-image #task{padding:12px}header{gap:12px}header h1{font-size:clamp(28px,7vw,36px)}}
