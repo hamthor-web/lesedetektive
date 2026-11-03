@@ -45,3 +45,7 @@ Im Querformat steht der Bildzoom links unter dem Fortschritt, die Schriftsteueru
 ## 2026.11.03.7: Buttontexte und wirksame Zoomregler
 
 Schmuckbuttons verwenden kleinere, sichere Innenabstände und dürfen ihre Beschriftung umbrechen. Der Ansichtszoom verändert Auswahl und Profilpanel tatsächlich und hat einen eigenen gespeicherten Wert. Der Bildzoom verändert nur das sichtbare Suchbild; Schrift und Bedienung der laufenden Runde bleiben unverändert. Bild- und Suchwort-Schriftregler erscheinen erst, wenn das Suchbild angezeigt wird. In Eingangsfilmen und Lautaufgaben wird kein wirkungsloser Bildzoom angeboten.
+
+## 2026.11.03.8: Dauerhaft Platz für den Bildregler
+
+Die laufende Uhr zeigt Minuten:Sekunden, Ergebnisse behalten die ausgeschriebene Zeit. Der Bildregler beansprucht in der seitlichen Spalte nur seine eigene Höhe. Dies verhindert ein Herausrutschen der Regler bei längeren Zeitrunden.

@@ -60,3 +60,7 @@ Schriftsteuerung rechts bei den Bedienknöpfen, Bildzoom links. Beim Drehen des 
 ## 2026.11.03.7 – 03.11.2026
 
 Buttonbeschriftungen mit sicherem Innenabstand und Umbruch; unabhängiger wirksamer Ansichtszoom in Auswahl/Profilen und Bildzoom ausschließlich beim sichtbaren Suchbild. Keine wirkungslosen Zoomregler in Videos, Lautaufgaben oder der Wortansicht vor gelesen.
+
+## 2026.11.03.8 – 03.11.2026
+
+Laufende Stoppuhr kompakt in Minuten:Sekunden; dadurch bleibt der Bildzoom auch bei längeren Runden erreichbar. Ergebniszeiten werden weiterhin ausgeschrieben.
