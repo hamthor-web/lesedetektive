@@ -37,3 +37,7 @@ Eine eigene synchronisierte Zoomleiste befindet sich jetzt im Bedienbereich des 
 ## 2026.11.03.5: Suchwort-Schrift und Hauptauswahl
 
 Die Suchwort-Kästchen beginnen mit 22 px und lassen sich unabhängig vom Bildzoom auf bis zu 44 px vergrößern. Die Schriftsteuerung steht im Spielbedienbereich, ihre Einstellung bleibt auf dem Gerät gespeichert. Minus verkleinert bis zur neuen größeren Grundschrift. Die Hauptauswahl verwendet nun ebenfalls die freie Bildschirmhöhe zur vertikalen Zentrierung; ihre Installationsfunktionen stehen unter den Spielbuttons.
+
+## 2026.11.03.6: Erreichbare Regler beim Drehen
+
+Im Querformat steht der Bildzoom links unter dem Fortschritt, die Schriftsteuerung rechts unter den Bedienknöpfen. Dadurch passen beide Steuerbereiche auch bei laufender Stoppuhr auf den Bildschirm. Ein Wechsel zwischen Hoch- und Querformat richtet die laufende Spielansicht wieder am sichtbaren Bereich aus.

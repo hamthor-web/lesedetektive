@@ -45,7 +45,8 @@
   apply();
   if(typeof window!=='undefined'){
     window.LDZoomRefresh=apply;
-    window.addEventListener('resize',apply);
+    let landscape=window.innerWidth>window.innerHeight;
+    window.addEventListener('resize',()=>{apply();const next=window.innerWidth>window.innerHeight;if(next!==landscape&&document.body.classList.contains('playing'))document.getElementById('play')?.scrollIntoView({block:'start'});landscape=next;});
     if(typeof ResizeObserver!=='undefined'){const field=document.getElementById('playfield');if(field)new ResizeObserver(apply).observe(field);}
   }
 })();

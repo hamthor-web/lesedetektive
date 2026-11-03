@@ -52,3 +52,7 @@ Zoomleiste direkt im Spielbedienbereich: im Querformat links unter den Anzeigen,
 ## 2026.11.03.5 – 03.11.2026
 
 Suchwörter mindestens 22 px statt bisher 15/16 px; eigene Schriftsteuerung von 100 bis 200 Prozent, getrennt vom Bildzoom. Hauptauswahl der Spiele nutzt die Bildschirmhöhe zur Zentrierung.
+
+## 2026.11.03.6 – 03.11.2026
+
+Schriftsteuerung rechts bei den Bedienknöpfen, Bildzoom links. Beim Drehen des Geräts wird die laufende Spielansicht wieder in den sichtbaren Bildschirm gescrollt.
