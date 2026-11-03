@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const KEY = 'lesedetektive:zoom:v1';
-  const levels = [75, 90, 100, 110, 125, 150, 175, 200];
+  const levels = [35, 50, 60, 75, 90, 100, 110, 125, 150, 175, 200];
   let value = 100;
   try { const stored = Number(localStorage.getItem(KEY)); if (levels.includes(stored)) value = stored; } catch {}
   const bars = [];

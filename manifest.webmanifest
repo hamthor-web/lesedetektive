@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Lesedetektive",
   "short_name": "Lesedetektive",
-  "description": "Lesen und im Bild suchen · Zischlaute erkennen und richtig lesen",
+  "description": "Lesen und im Bild suchen · CH oder SCH? · Wie klingt es?",
   "lang": "de",
   "start_url": "./index.html",
   "scope": "./",
@@ -10,7 +10,17 @@
   "background_color": "#f4f2e9",
   "theme_color": "#21655b",
   "icons": [
-    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }

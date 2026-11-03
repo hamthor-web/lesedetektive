@@ -32,3 +32,7 @@ Jede neue Leserunde mischt alle 24 Karten nach dem Zufallsprinzip. Jede Karte ka
 ## Zoom auf allen Seiten · Version 2026.11.01.7
 
 Eine gemeinsame Zoomleiste mit Minus, Prozentanzeige/Zurücksetzen und Plus vergrößert oder verkleinert die gesamte Arbeitsfläche einschließlich Lesekarten, Suchbildern und Lautübungen. Bereich: 75 bis 200 Prozent. Die Einstellung bleibt auf diesem Gerät bei Seitenwechsel und Neustart gespeichert. Auch Profilauswahl und Videobegrüßung haben eigene erreichbare Bedienelemente. Bei vergrößerten Arbeitsflächen ist Scrollen möglich; Trefferflächen bleiben am Bild ausgerichtet. Die vorhandene Browser-/Zweifinger-Zoomfunktion bleibt erlaubt. Zusätzliche Prüfung: `node tests/zoom.cjs`.
+
+## 2026.11.03.1 – 03.11.2026
+
+Drei Spieloberflächen mit Paketen, Zufall und Zeitvarianten; eigene Profil-Ergebnisse, Blumenstrauß und Ergebnisleiter mit drei Sekunden Standzeit und Weiter-Button; neue Filme und Schmuckbuttons, korrigierte Blüten und Lautfolge; vollständiges Offline-Paket.
