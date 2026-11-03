@@ -17,3 +17,7 @@ Die neue Offline-Version enthält alle drei Spiele, Videos und Fortschrittsgrafi
 Prüfen: node tests/check.cjs; node tests/oberflaeche-pruefen.cjs; node tests/fortschritt-pruefen.cjs; node tests/intro.cjs; node tests/zoom.cjs; node tests/platform.cjs; node tests/offline.cjs.
 
 Die gespeicherten Ergebnissummen bleiben beim Neuladen erhalten; eine gerade laufende Runde wird dabei nicht fortgesetzt. Eine Sicht- und Tonkontrolle auf Android/iPad/iPhone bleibt empfohlen.
+
+## Bildschirmaufteilung (2026.11.03.2)
+
+Im Hochformat verwendet die Spielansicht die verfügbare Bildschirmhöhe, um die Aufgabe vertikal zu zentrieren. Im Querformat stehen Fortschritt und Zeit links, Ergebnisse und Runde beenden rechts. Dazwischen ist die Aufgabe unabhängig scrollbar. Kopfzeile mit Spieltitel und Zoomleiste dürfen nach oben wegscrollen. Beim Wechsel der Aufgabe beginnt die mittlere Scrollfläche wieder oben; beim Wechsel zur Ergebnisübersicht verschwindet die seitliche Spielaufteilung vollständig. Bilder werden im Querformat nicht mehr auf eine winzige Resthöhe verkleinert. Zoom 35–200 Prozent und Browserzoom bleiben erhalten.

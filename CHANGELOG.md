@@ -36,3 +36,7 @@ Eine gemeinsame Zoomleiste mit Minus, Prozentanzeige/Zurücksetzen und Plus verg
 ## 2026.11.03.1 – 03.11.2026
 
 Drei Spieloberflächen mit Paketen, Zufall und Zeitvarianten; eigene Profil-Ergebnisse, Blumenstrauß und Ergebnisleiter mit drei Sekunden Standzeit und Weiter-Button; neue Filme und Schmuckbuttons, korrigierte Blüten und Lautfolge; vollständiges Offline-Paket.
+
+## 2026.11.03.2 – 03.11.2026
+
+Spielaufgaben im Hochformat vertikal zentriert. Querformat mit seitlichen Anzeigen und Bedienknöpfen sowie unabhängig scrollbarerer Aufgabenfläche. Spieltitel und Zoomleiste scrollen weg und verdecken keine Aufgabe. Zoomstufen bleiben erhalten.

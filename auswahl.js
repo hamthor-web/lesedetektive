@@ -22,7 +22,7 @@
   $('pageTitle').textContent=names[game];$('home').hidden=true;$('setup').hidden=false;$('play').hidden=true;$('progressScreen').hidden=true;$('history').hidden=true;$('homeButton').hidden=false;
   update();history.replaceState(null,'','#'+game);window.scrollTo(0,0);
  }
- function home(){document.body.classList.remove('searching-image');for(const id of ['setup','play','progressScreen','history'])$(id).hidden=true;$('home').hidden=false;$('homeButton').hidden=true;$('pageTitle').textContent='Lesedetektive';history.replaceState(null,'',location.pathname+location.search);}
+ function home(){document.body.classList.remove('playing');document.body.classList.remove('searching-image');for(const id of ['setup','play','progressScreen','history'])$(id).hidden=true;$('home').hidden=false;$('homeButton').hidden=true;$('pageTitle').textContent='Lesedetektive';history.replaceState(null,'',location.pathname+location.search);}
  function clean(){clearTimeout(hold);hold=null;token++;$('introVideo').pause();$('introVideo').removeAttribute('src');$('introVideo').load();}
  function enter(){const game=pending;pending=null;clean();$('introDialog').close();if(game)openGame(game);}
  async function play(){const t=token;try{await $('introVideo').play();if(t===token)$('introStart').hidden=true;}catch{if(t===token){$('introStart').hidden=false;$('introNote').textContent='Starte den Film oder gehe direkt zum Spiel.';}}}

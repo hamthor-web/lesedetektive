@@ -9,9 +9,11 @@
 <button id="start" class="primary">Los!</button> <button id="setupProgress">Meine Ergebnisse</button><p id="prepare" role="status"></p>
 </section>
 <section id="play" hidden>
-<div class="clockbar"><div><span id="modeLabel"></span><strong id="clock" role="timer">01:00</strong></div><div><span>Gelöst</span><strong id="score">0</strong></div><button id="viewProgress">Ergebnisübersicht</button><button id="abort">Runde beenden</button></div>
+<div class="clockbar"><div class="round-stats"><div><span id="modeLabel"></span><strong id="clock" role="timer">01:00</strong></div><div><span>Gelöst</span><strong id="score">0</strong></div></div><div class="round-actions"><button id="viewProgress">Ergebnisübersicht</button><button id="abort">Runde beenden</button></div></div>
+<div id="playfield" class="playfield" tabindex="0" aria-label="Spielaufgabe, bei Bedarf scrollbar">
 <p id="roundLabel" class="round-label"></p><p id="feedback" class="feedback" role="status" aria-live="polite"></p>
 <section id="task" class="card"></section>
+</div>
 </section>
 <section id="progressScreen" class="card" hidden><button id="resume">Zurück zum Spiel</button><p id="progressNotice" role="status"></p><p class="eyebrow">DEIN ERGEBNIS</p><h2 id="resultTitle"></h2><p id="resultText" class="result-text"></p><button id="again" class="primary">Noch einmal</button> <button id="choose">Runde auswählen</button><button id="export">Ergebnisse als Text speichern</button><iframe allow="autoplay" id="progressFrame" title="Deine Blüten und Ergebnisse"></iframe></section>
 <section id="history" class="card" hidden><h2>Schriftliche Ergebnisse</h2><p>Die Ergebnisse dieser Arbeitsfassung bleiben auf diesem Gerät gespeichert. Du kannst sie als Textdatei sichern.</p><p id="storageStatus" role="status"></p><div class="table-scroll"><table><caption class="sr-only">Bisherige Zeitrunden</caption><thead><tr><th>Datum</th><th>Spiel</th><th>Variante</th><th>Reihenfolge</th><th>Ergebnis</th><th>Zeit</th><th>Fehlversuche</th><th>Status</th></tr></thead><tbody id="records"></tbody></table></div><p id="empty">Noch keine Zeitrunde gespielt.</p></section>

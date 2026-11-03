@@ -41,3 +41,47 @@ button:not(.zoom-controls button):not(.flower):disabled{opacity:.45}
 @media(max-width:600px){button:not(.zoom-controls button):not(.flower){min-width:140px;min-height:66px;padding:18px 22px 18px 48px;font-size:17px}.answers button,.duel button{font-size:24px;min-height:85px}.clockbar button{flex:1;min-width:135px;font-size:14px}.game-menu button{min-height:115px;font-size:22px;padding:27px 8% 27px 17%}}
 
 .platform-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.platform-actions p{flex-basis:100%;text-align:center;font-size:15px}.profile-loading main{visibility:hidden}
+
+/* Play uses the available height. Controls never float over the task. */
+.round-stats,.round-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.round-actions{justify-content:center}
+body.playing>main{width:min(100%,1200px);padding:12px}
+body.playing>main>header{display:flex;position:static;margin:0 0 14px}
+body.playing>main>header [data-profile-switch],body.playing>main>footer{display:none}
+body.playing>main>header h1{font-size:clamp(24px,4vw,36px)}
+body.playing>.zoom-controls{position:static;margin:8px auto}
+body.playing #play{display:flex;flex-direction:column;gap:12px;min-height:calc(100svh / var(--app-zoom) - 24px)}
+body.playing .clockbar{position:static;top:auto;flex-shrink:0;margin:0;padding:10px 14px;gap:10px}
+body.playing .clockbar strong{font-size:28px}
+body.playing .clockbar span{font-size:14px}
+body.playing .playfield{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px;outline-offset:3px}
+body.playing #roundLabel{display:none}
+body.playing #feedback{margin:0;min-height:0}
+body.playing #feedback:empty{display:none}
+body.playing #task{width:100%;margin:auto 0;padding:clamp(18px,4vw,36px)}
+body.playing.searching-image #task{padding:12px}
+body.playing.searching-image .stage{width:min(100%,max(180px,calc((100svh - 260px) * .666667)),560px)}
+@media(orientation:portrait){
+ body.playing .clockbar{justify-content:center}
+ body.playing .round-stats{justify-content:center;gap:24px;flex:1}
+ body.playing .round-actions{gap:8px;flex:1}
+ body.playing .round-actions button{min-width:130px;min-height:60px;font-size:14px;padding:16px 18px 16px 43px;flex:1}
+ body.playing .reading{font-size:clamp(32px,7vw,48px)}
+ body.playing .reading.story{font-size:clamp(25px,5vw,34px)}
+}
+@media(orientation:landscape){
+ body.playing #play{display:grid;grid-template-columns:clamp(88px,13vw,150px) minmax(0,1fr) clamp(125px,18vw,190px);align-items:start;gap:12px;min-height:calc(100svh / var(--app-zoom) - 24px)}
+ body.playing .clockbar{display:contents}
+ body.playing .round-stats{grid-column:1;grid-row:1;position:sticky;top:12px;align-self:start;display:flex;flex-direction:column;align-items:center;gap:18px;padding:16px 7px;text-align:center;border:1px solid #bfcebf;border-radius:16px;background:#fffdf4}
+ body.playing .round-stats strong{font-size:26px;overflow-wrap:anywhere}
+ body.playing .round-stats span{font-size:14px}
+ body.playing .round-actions{grid-column:3;grid-row:1;position:sticky;top:12px;align-self:start;display:flex;flex-direction:column;gap:14px}
+ body.playing .round-actions button{width:100%;min-width:0;min-height:70px;font-size:15px;padding:17px 14px 17px 32px;overflow-wrap:anywhere}
+ body.playing .playfield{grid-column:2;grid-row:1;max-height:calc(100dvh / var(--app-zoom) - 24px);min-height:calc(100svh / var(--app-zoom) - 24px);overflow:auto;overscroll-behavior-y:contain;scrollbar-gutter:stable;padding:3px}
+ body.playing #task{padding:18px;margin:auto 0;flex-shrink:0}
+ body.playing .reading{font-size:clamp(30px,4vw,46px);padding:8px 0}
+ body.playing .reading.story{font-size:clamp(23px,3vw,32px)}
+ body.playing.searching-image .stage{width:min(100%,560px);max-width:560px}
+ body.playing.searching-image .words{font-size:15px}
+ body.playing .clockbar.urgent .round-stats{background:#fff0dc}
+}
