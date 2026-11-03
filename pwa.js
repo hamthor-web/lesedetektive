@@ -1,6 +1,6 @@
 'use strict';
 (() => {
-  const VERSION = '2026.11.03.3';
+  const VERSION = '2026.11.03.4';
   let installPrompt = null, registration = null, applying = false, checking = false, installedHere = false;
   const standalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);

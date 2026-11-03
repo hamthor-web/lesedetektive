@@ -44,3 +44,7 @@ Spielaufgaben im Hochformat vertikal zentriert. Querformat mit seitlichen Anzeig
 ## 2026.11.03.3 – 03.11.2026
 
 Feste Höhe für die Zentrierung im Hochformat; Zoom nur für Suchbilder; interne Zurücknavigation und Rechtswischen; direkt erreichbare Variantenwahl mit Rückkehr zur laufenden Runde.
+
+## 2026.11.03.4 – 03.11.2026
+
+Zoomleiste direkt im Spielbedienbereich: im Querformat links unter den Anzeigen, im Hochformat zusammen mit dem Fortschritt. Sie scrollt nicht mehr mit der Kopfzeile aus dem Spiel.

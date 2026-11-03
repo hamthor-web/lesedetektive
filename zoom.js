@@ -35,6 +35,8 @@
     return bar;
   }
   document.body.prepend(createBar());
+  const gameControls=document.querySelector('.round-stats');
+  if(gameControls)gameControls.append(createBar());
   // Modal dialogs need their own controls: the background is intentionally inert.
   const welcome = document.querySelector('.welcome-controls');
   if (welcome) welcome.prepend(createBar());

@@ -29,3 +29,7 @@ Die Spielansicht hat nun eine feste Bildschirmhöhe und eine darin zentrierte Au
 Die App legt eigene Navigationsschritte an: Alle Spiele → Variantenwahl → Spiel → Ergebnisse. Browser-Zurück und Rechtswischen führen zur vorherigen App-Ansicht. Das Verschieben eines vergrößerten Bildes löst keinen eigenen App-Swipe aus. Auf der Hauptauswahl kann der nächste System-Zurück-Schritt die App wie gewohnt verlassen.
 
 Andere Variante des Spiels ist direkt im Spiel erreichbar. Die laufende Runde lässt sich aus der Auswahl fortsetzen. Erst Los! beendet eine noch laufende vorherige Runde und dokumentiert sie als abgebrochen, ohne Erfolgsblüte. Bei Zeitrunden läuft die Uhr während der Variantenwahl weiter; ein Hinweis zeigt dies an. Beim Wechsel zur Hauptauswahl wird die laufende Runde beendet.
+
+## 2026.11.03.4: Zoom dauerhaft im Spiel erreichbar
+
+Eine eigene synchronisierte Zoomleiste befindet sich jetzt im Bedienbereich des Spiels. Im Querformat steht sie links unter Zeit und Fortschritt; im Hochformat gehört sie zum oberen Bedienbereich. Die zusätzliche allgemeine Zoomleiste ist während des Spiels ausgeblendet. Sie kehrt in der Auswahl zurück. Bildzoom verändert weiterhin weder Schrift noch Buttonmaße.
