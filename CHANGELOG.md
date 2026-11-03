@@ -48,3 +48,7 @@ Feste Höhe für die Zentrierung im Hochformat; Zoom nur für Suchbilder; intern
 ## 2026.11.03.4 – 03.11.2026
 
 Zoomleiste direkt im Spielbedienbereich: im Querformat links unter den Anzeigen, im Hochformat zusammen mit dem Fortschritt. Sie scrollt nicht mehr mit der Kopfzeile aus dem Spiel.
+
+## 2026.11.03.5 – 03.11.2026
+
+Suchwörter mindestens 22 px statt bisher 15/16 px; eigene Schriftsteuerung von 100 bis 200 Prozent, getrennt vom Bildzoom. Hauptauswahl der Spiele nutzt die Bildschirmhöhe zur Zentrierung.

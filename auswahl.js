@@ -14,7 +14,7 @@
   $('packageNote').textContent=all?'Du spielst alle 20 Wortpaare.':selection()==='fixed'?'In diesem Paket bleiben die Aufgaben und ihre Reihenfolge gleich.':'Für jede Runde werden die Aufgaben neu gemischt.';
   saved[selected]={mode:mode(),sequence:selection(),tasks:$('roundLength').value,packageId:$('packageChoice').value};try{localStorage.setItem(settingsKey,JSON.stringify(saved));}catch{}
  }
- function openGame(game){if(game!==selected)window.LDGame?.leave();
+ function openGame(game){document.body.classList.remove('choosing');if(game!==selected)window.LDGame?.leave();
   selected=game;radios('game',game);const s=saved[game]||{mode:'normal',sequence:'fixed',tasks:'10'};
   radios('mode',s.mode);radios('sequence',s.sequence);$('roundLength').value=s.tasks||'10';
   $('packageChoice').replaceChildren(...LD_PACKAGES[game].map(p=>{const o=document.createElement('option');o.value=p.id;o.textContent=p.label;return o;}));
@@ -22,7 +22,7 @@
   $('pageTitle').textContent=names[game];$('home').hidden=true;$('setup').hidden=false;$('play').hidden=true;$('progressScreen').hidden=true;$('history').hidden=true;$('homeButton').hidden=false;
   update();if(window.LDNavigation)window.LDNavigation.show('setup',game);else history.replaceState(null,'','#'+game);window.scrollTo(0,0);
  }
- function home(){window.LDGame?.leave();document.body.classList.remove('playing');document.body.classList.remove('searching-image');for(const id of ['setup','play','progressScreen','history'])$(id).hidden=true;$('home').hidden=false;$('homeButton').hidden=true;$('pageTitle').textContent='Lesedetektive';if(window.LDNavigation)window.LDNavigation.show('home');else history.replaceState(null,'',location.pathname+location.search);}
+ function home(){document.body.classList.add('choosing');window.LDGame?.leave();document.body.classList.remove('playing');document.body.classList.remove('searching-image');for(const id of ['setup','play','progressScreen','history'])$(id).hidden=true;$('home').hidden=false;$('homeButton').hidden=true;$('pageTitle').textContent='Lesedetektive';if(window.LDNavigation)window.LDNavigation.show('home');else history.replaceState(null,'',location.pathname+location.search);}
  function clean(){clearTimeout(hold);hold=null;token++;$('introVideo').pause();$('introVideo').removeAttribute('src');$('introVideo').load();}
  function enter(){const game=pending;pending=null;clean();$('introDialog').close();if(game)openGame(game);}
  async function play(){const t=token;try{await $('introVideo').play();if(t===token)$('introStart').hidden=true;}catch{if(t===token){$('introStart').hidden=false;$('introNote').textContent='Starte den Film oder gehe direkt zum Spiel.';}}}

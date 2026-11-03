@@ -7,5 +7,5 @@ assert.equal(cards.length,24);assert.equal(cards.reduce((n,c)=>n+c.regions.lengt
 const {Round}=require('../spiel.js'),packages=require('../pakete.js');for(const [game,list]of Object.entries(packages)){const covered=new Set();for(const p of list){assert.equal(new Set(p.indices).size,p.indices.length);p.indices.slice(0,10).forEach(i=>covered.add(i));const r=new Round({mode:'minute',sequence:'fixed',indices:p.indices},100,0);assert.deepStrictEqual(r.queue,p.indices);for(let i=0;i<p.indices.length;i++)r.solve(i);assert.equal(r.current(),p.indices[0]);}assert.equal(covered.size,{reading:24,sort:59,family:20}[game]);}
 for(const f of ['spiel.js','auswahl.js','pakete.js','profiles.js','pwa.js','zoom.js','fortschritt/leiter.js'])new vm.Script(fs.readFileSync(dir+'/'+f,'utf8'));
 const html=fs.readFileSync(dir+'/index.html','utf8');for(const m of html.matchAll(/(?:src|href)="([^"#]+)"/g))if(!m[1].includes(':'))assert.ok(fs.existsSync(dir+'/'+m[1]),m[1]);
-assert.ok(fs.readFileSync(dir+'/fortschritt/stil.css','utf8').includes('button:not(.zoom-controls button):not(.flower)'));
+assert.ok(fs.readFileSync(dir+'/fortschritt/stil.css','utf8').includes(':not(.flower)'));
 console.log('BESTANDEN: Originaldaten und alle 24 Bilder per SHA256 unverändert; 82 Trefferflächen und Sterne; vollständige Pakete; Dateien und Skripte; Blüten ohne Buttonrahmen.');

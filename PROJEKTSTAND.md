@@ -33,3 +33,7 @@ Andere Variante des Spiels ist direkt im Spiel erreichbar. Die laufende Runde l�
 ## 2026.11.03.4: Zoom dauerhaft im Spiel erreichbar
 
 Eine eigene synchronisierte Zoomleiste befindet sich jetzt im Bedienbereich des Spiels. Im Querformat steht sie links unter Zeit und Fortschritt; im Hochformat gehört sie zum oberen Bedienbereich. Die zusätzliche allgemeine Zoomleiste ist während des Spiels ausgeblendet. Sie kehrt in der Auswahl zurück. Bildzoom verändert weiterhin weder Schrift noch Buttonmaße.
+
+## 2026.11.03.5: Suchwort-Schrift und Hauptauswahl
+
+Die Suchwort-Kästchen beginnen mit 22 px und lassen sich unabhängig vom Bildzoom auf bis zu 44 px vergrößern. Die Schriftsteuerung steht im Spielbedienbereich, ihre Einstellung bleibt auf dem Gerät gespeichert. Minus verkleinert bis zur neuen größeren Grundschrift. Die Hauptauswahl verwendet nun ebenfalls die freie Bildschirmhöhe zur vertikalen Zentrierung; ihre Installationsfunktionen stehen unter den Spielbuttons.
