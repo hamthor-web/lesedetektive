@@ -41,3 +41,7 @@ Die Suchwort-Kästchen beginnen mit 22 px und lassen sich unabhängig vom Bildzo
 ## 2026.11.03.6: Erreichbare Regler beim Drehen
 
 Im Querformat steht der Bildzoom links unter dem Fortschritt, die Schriftsteuerung rechts unter den Bedienknöpfen. Dadurch passen beide Steuerbereiche auch bei laufender Stoppuhr auf den Bildschirm. Ein Wechsel zwischen Hoch- und Querformat richtet die laufende Spielansicht wieder am sichtbaren Bereich aus.
+
+## 2026.11.03.7: Buttontexte und wirksame Zoomregler
+
+Schmuckbuttons verwenden kleinere, sichere Innenabstände und dürfen ihre Beschriftung umbrechen. Der Ansichtszoom verändert Auswahl und Profilpanel tatsächlich und hat einen eigenen gespeicherten Wert. Der Bildzoom verändert nur das sichtbare Suchbild; Schrift und Bedienung der laufenden Runde bleiben unverändert. Bild- und Suchwort-Schriftregler erscheinen erst, wenn das Suchbild angezeigt wird. In Eingangsfilmen und Lautaufgaben wird kein wirkungsloser Bildzoom angeboten.

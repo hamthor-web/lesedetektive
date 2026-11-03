@@ -56,3 +56,7 @@ Suchwörter mindestens 22 px statt bisher 15/16 px; eigene Schriftsteuerung von 
 ## 2026.11.03.6 – 03.11.2026
 
 Schriftsteuerung rechts bei den Bedienknöpfen, Bildzoom links. Beim Drehen des Geräts wird die laufende Spielansicht wieder in den sichtbaren Bildschirm gescrollt.
+
+## 2026.11.03.7 – 03.11.2026
+
+Buttonbeschriftungen mit sicherem Innenabstand und Umbruch; unabhängiger wirksamer Ansichtszoom in Auswahl/Profilen und Bildzoom ausschließlich beim sichtbaren Suchbild. Keine wirkungslosen Zoomregler in Videos, Lautaufgaben oder der Wortansicht vor gelesen.
