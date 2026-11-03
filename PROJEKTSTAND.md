@@ -21,3 +21,11 @@ Die gespeicherten Ergebnissummen bleiben beim Neuladen erhalten; eine gerade lau
 ## Bildschirmaufteilung (2026.11.03.2)
 
 Im Hochformat verwendet die Spielansicht die verfügbare Bildschirmhöhe, um die Aufgabe vertikal zu zentrieren. Im Querformat stehen Fortschritt und Zeit links, Ergebnisse und Runde beenden rechts. Dazwischen ist die Aufgabe unabhängig scrollbar. Kopfzeile mit Spieltitel und Zoomleiste dürfen nach oben wegscrollen. Beim Wechsel der Aufgabe beginnt die mittlere Scrollfläche wieder oben; beim Wechsel zur Ergebnisübersicht verschwindet die seitliche Spielaufteilung vollständig. Bilder werden im Querformat nicht mehr auf eine winzige Resthöhe verkleinert. Zoom 35–200 Prozent und Browserzoom bleiben erhalten.
+
+## 2026.11.03.3: Zoom und Navigation
+
+Die Spielansicht hat nun eine feste Bildschirmhöhe und eine darin zentrierte Aufgabenfläche. Zoom verändert ausschließlich das Suchbild, nicht Schrift, Buttons oder Anzeigen. Die seitliche Bedienung im Querformat bleibt gleich groß.
+
+Die App legt eigene Navigationsschritte an: Alle Spiele → Variantenwahl → Spiel → Ergebnisse. Browser-Zurück und Rechtswischen führen zur vorherigen App-Ansicht. Das Verschieben eines vergrößerten Bildes löst keinen eigenen App-Swipe aus. Auf der Hauptauswahl kann der nächste System-Zurück-Schritt die App wie gewohnt verlassen.
+
+Andere Variante des Spiels ist direkt im Spiel erreichbar. Die laufende Runde lässt sich aus der Auswahl fortsetzen. Erst Los! beendet eine noch laufende vorherige Runde und dokumentiert sie als abgebrochen, ohne Erfolgsblüte. Bei Zeitrunden läuft die Uhr während der Variantenwahl weiter; ein Hinweis zeigt dies an. Beim Wechsel zur Hauptauswahl wird die laufende Runde beendet.

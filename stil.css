@@ -85,3 +85,20 @@ body.playing.searching-image .stage{width:min(100%,max(180px,calc((100svh - 260p
  body.playing.searching-image .words{font-size:15px}
  body.playing .clockbar.urgent .round-stats{background:#fff0dc}
 }
+
+/* Stable control/text sizes; the zoom value belongs to the image field only. */
+body>main,.profile-welcome .profile-panel{zoom:1!important}
+.praise-card,#introDialog>:not(.zoom-controls){zoom:1!important}
+body.playing>main{width:min(100%,1200px);padding:12px}
+body.playing #play{height:calc(100dvh - 24px);min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr);grid-template-columns:minmax(0,1fr)}
+body.playing .playfield{height:100%;min-height:0;max-height:none;overflow:auto;display:flex;flex-direction:column;align-items:stretch;overscroll-behavior-y:contain;scrollbar-gutter:stable}
+body.playing #task{flex:0 0 auto;margin-block:auto}
+body.playing.searching-image .stage{max-width:none;width:min(100%,560px)}
+#setupNotice{font-size:16px;color:#587267}
+@media(orientation:landscape){
+ body.playing #play{grid-template-columns:clamp(88px,13vw,150px) minmax(0,1fr) clamp(125px,18vw,190px);grid-template-rows:minmax(0,1fr);height:calc(100dvh - 24px);min-height:0}
+ body.playing .playfield{height:100%;min-height:0;max-height:none}
+ body.playing .round-stats,body.playing .round-actions{position:static;max-height:100%;overflow-y:auto}
+ body.playing .round-actions{gap:6px}
+ body.playing .round-actions button{font-size:14px;min-height:60px}
+}

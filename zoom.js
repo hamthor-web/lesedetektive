@@ -8,6 +8,13 @@
   function apply() {
     document.documentElement.style.setProperty('--app-zoom', value / 100);
     document.documentElement.toggleAttribute('data-app-zoomed', value > 100);
+    const stage=document.querySelector('.stage'),field=document.getElementById('playfield');
+    if(stage&&field&&field.clientWidth){
+      const portrait=typeof window!=='undefined'&&window.innerHeight>=window.innerWidth;
+      const base=Math.max(140,Math.min(560,field.clientWidth-30,portrait?Math.max(210,window.innerHeight-220)*2/3:560));
+      stage.style.width=Math.round(base*value/100)+'px';
+      stage.style.maxWidth='none';
+    }
     for (const bar of bars) {
       bar.querySelector('[data-zoom="reset"]').textContent = value + ' %';
       bar.querySelector('[data-zoom="out"]').disabled = value === levels[0];
@@ -34,4 +41,9 @@
   const intro = document.getElementById('introDialog');
   if (intro) intro.prepend(createBar());
   apply();
+  if(typeof window!=='undefined'){
+    window.LDZoomRefresh=apply;
+    window.addEventListener('resize',apply);
+    if(typeof ResizeObserver!=='undefined'){const field=document.getElementById('playfield');if(field)new ResizeObserver(apply).observe(field);}
+  }
 })();
