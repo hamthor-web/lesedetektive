@@ -1,0 +1,50 @@
+/* Text reflows inside the viewport. Image zoom remains independent. */
+:root{--menu-text-scale:1}
+body:not(.playing)>main,.profile-welcome .profile-panel{zoom:1!important}
+body:not(.playing)>main{max-width:100%;min-width:0}
+body.choosing>main{width:min(100%,900px);height:auto;min-height:calc(100svh - 88px);display:flex;flex-direction:column;gap:20px;padding:20px}
+body.choosing #home{flex:0 0 auto;width:100%;display:flex;gap:20px;justify-content:flex-start}
+body.choosing .home-intro{margin:12px 0 0;font-size:calc(24px * var(--menu-text-scale));line-height:1.4}
+body.choosing .game-menu{width:100%;gap:18px;margin:0}
+#home .game-menu>button{width:100%;height:auto;min-height:104px;font-size:calc(26px * var(--menu-text-scale));line-height:1.35;padding:26px 28px 26px 52px;white-space:normal;overflow-wrap:break-word;hyphens:auto}
+#home .game-menu small{font-size:calc(21px * var(--menu-text-scale));line-height:1.4;padding:6px 0 0}
+body:not(.playing) header{gap:12px;min-width:0}
+body:not(.playing) header h1{min-width:0;flex:1 1 210px;font-size:calc(clamp(28px,5vw,40px) * var(--menu-text-scale));overflow-wrap:anywhere}
+body:not(.playing) header button{font-size:calc(18px * var(--menu-text-scale));line-height:1.4;min-height:56px}
+body>.zoom-controls,.welcome-controls>.zoom-controls{position:relative;top:auto;left:auto;display:flex;flex-wrap:wrap;width:fit-content;max-width:calc(100% - 24px);margin:12px auto;padding:10px;gap:8px;border:2px solid #21655b;border-radius:16px;font-size:18px;box-shadow:0 3px 12px #203d4218}
+body>.zoom-controls span,.welcome-controls>.zoom-controls span{flex-basis:100%;text-align:center;font-size:18px;font-weight:750}
+body>.zoom-controls button,.welcome-controls>.zoom-controls button{min-width:56px;min-height:52px;font-size:28px;padding:8px 12px}
+body>.zoom-controls [data-zoom=reset],.welcome-controls>.zoom-controls [data-zoom=reset]{min-width:88px;font-size:18px}
+body.choosing .platform-actions{margin:4px 0 0;padding:18px 14px;background:#e7eee4;border:1px solid #c1d0bf;border-radius:18px;gap:12px}
+.platform-actions button{font-size:calc(18px * var(--menu-text-scale));min-height:56px;flex:1 1 170px}
+.platform-actions p{font-size:calc(17px * var(--menu-text-scale));line-height:1.5;margin:0;color:#244d43;overflow-wrap:break-word}
+body:not(.playing) main>footer{margin:0;padding:18px 20px;background:#e7eee4;border:1px solid #c1d0bf;border-radius:18px;font-size:calc(17px * var(--menu-text-scale));line-height:1.5;color:#244d43;overflow-wrap:break-word}
+footer strong,footer span{display:block}footer span{margin-top:4px}
+#setup{font-size:calc(20px * var(--menu-text-scale));min-width:0}
+#setup h2{font-size:1.5em}#setup legend{font-size:1.1em;max-width:100%;line-height:1.4}
+#setup fieldset label,#setup select,#setup button{font-size:inherit}
+#setup .hint,#setup details,#setupNotice{font-size:calc(18px * var(--menu-text-scale))}
+#setup fieldset{min-width:0}#setup fieldset label{min-width:min(100%,180px)}
+#setup label,#setup p{overflow-wrap:break-word}
+#profileDialog .profile-panel{font-size:calc(20px * var(--menu-text-scale));max-width:100%;overflow-wrap:break-word}
+#profileDialog .profile-panel h2{font-size:1.4em}#profileDialog .profile-panel input,#profileDialog .profile-panel button{font-size:inherit}
+#profileDialog .profile-list button{font-size:calc(26px * var(--menu-text-scale));white-space:normal}
+#profileDialog .profile-install [data-app-status],#profileDialog .profile-storage{font-size:calc(17px * var(--menu-text-scale))}
+@media(max-width:600px){
+ body.choosing>main{padding:16px;gap:20px;min-height:0}
+ body:not(.playing) main>header{display:grid;grid-template-columns:46px minmax(0,1fr);align-items:center;gap:10px}
+ body:not(.playing) header .app-logo{grid-column:1;grid-row:1;width:46px;height:64px}
+ body:not(.playing) header h1{grid-column:2;grid-row:1;margin:0;font-size:calc(28px * var(--menu-text-scale))}
+ body:not(.playing) header button{grid-column:1/-1;width:100%}
+ #home .game-menu>button{font-size:calc(24px * var(--menu-text-scale));padding:24px 22px 24px 42px;min-height:100px}
+ #home .game-menu small{font-size:calc(20px * var(--menu-text-scale))}
+ body.choosing .home-intro{font-size:calc(22px * var(--menu-text-scale))}
+ .profile-brand{flex-wrap:wrap}.profile-brand h2{min-width:0}
+}
+@media print{body>.zoom-controls{display:none}}
+#setup legend{overflow-wrap:anywhere;hyphens:auto;white-space:normal}
+/* Keep text inside the opaque paper, including at large font settings. */
+#home .game-menu>button{background-image:url('assets/button-responsive.png')!important;padding-block:1em}
+body:not(.playing) header h1{font-size:clamp(28px,5vw,40px)}
+@media(max-width:600px){body:not(.playing) header h1{font-size:28px}}
+body.playing .zoom-controls button,body.playing .word-size-controls button{min-width:44px!important;min-height:44px!important}
