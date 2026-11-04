@@ -90,3 +90,11 @@ Profilnamen mittig; neue gelieferte Würstchen-Grafik als Logo und App-/Home-Bil
 - Bildgrundgröße aus der tatsächlichen Arbeitsfläche; bisherige 560-Pixel-Grenze entfällt.
 - Varianten-, Profil- und Ergebnisansichten verbessert; Ergebnisgrafik ohne unnötige Mindesthöhe oder leere Spalten.
 - Responsive Browserprüfungen umfassen jetzt Aufgabenflächennutzung, vollständig geladene Ergebnisse und Filme.
+
+
+## 2026.11.04.4 – Bedienung auf Handy und Tablet
+- Großer gelesen-Button über die gesamte Aufgabenbreite; größere weitere Hauptaktionen.
+- Aufklappbares Spielmenü statt gequetschter Dreierleiste auf dem Handy.
+- Getrennte Rasterelemente verhindern überdeckte Seitenleisten im Tablet-Querformat; Feedback erhält eigenen Platz.
+- Speicherhinweis nur bei Anmeldung; Textexport entfernt (keine Wiederherstellungsfunktion).
+- Prüfung um iPad-Formate, Drehung laufender Spiele und echte Trefferprüfung der Regler erweitert.

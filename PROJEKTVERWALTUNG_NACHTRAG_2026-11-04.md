@@ -6,7 +6,7 @@ Stand: 04.11.2026. Grundlage: aktuelle GitHub-Spielakte PROJEKTSTAND.md, Commit 
 
 | Spiel | Bearbeitungsstand | Offen |
 |---|---|---|
-| Lesedetektive | Mobile Darstellung für alle Ansichten überarbeitet (2026.11.04.3); technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
+| Lesedetektive | Mobile Darstellung Bedienung auf Handy und Tablet korrigiert (2026.11.04.4); technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
 
 ## Bestätigte Anforderungen
 
@@ -19,3 +19,5 @@ Die vollständige technische Spielakte liegt in PROJEKTSTAND.md. Der Nachtrag er
 Bestätigte Ergänzung: Die gesamte verfügbare Bildschirmfläche soll genutzt werden. Höhere Spielbalken erhalten den freien Platz; unter den Speicherhinweisen bleibt kein großer leerer Seitenbereich.
 
 Erweiterung: Alle Seiten einschließlich Aufgaben, Bildsuche, Variantenwahl, Profilen, Filmen und Ergebnissen auf Aufgabenfokus und Flächennutzung geprüft und überarbeitet. Im Hochformat Bedienung unter der Aufgabe, im Querformat seitlich. Responsiv und funktional geprüft; Nutzung auf physischen Geräten bleibt als Rückmeldung offen.
+
+Bestätigte Ergänzung: gelesen als große Hauptaktion, Handy-Bedienung als aufklappbares Menü mit senkrechten Einträgen. iPad-Querformat mit getrennten Spielfeld- und Bedienbereichen. Speicherhinweis nur bei Anmeldung. Textexport entfernt, weil er keine wiederherstellbare Sicherung enthält; kein Import neu beauftragt. Erweiterte Browserprüfungen einschließlich Drehung und anklickbarer Seitenregler bestanden.

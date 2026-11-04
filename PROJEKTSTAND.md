@@ -1,4 +1,4 @@
-# Lesedetektive – 2026.11.04.3
+# Lesedetektive – 2026.11.04.4
 
 Drei getrennte Spieloberflächen: Lesen und im Bild suchen, Was zischt denn da? (CH/SCH) und Wie klingt es? (ich/ach). Ohne Zeit mit 10/15/20 Aufgaben sowie eine Minute und zehn Aufgaben mit Stoppuhr. Auswahl zwischen wiederholbaren Paketen und Zufall; 20 Wortpaare ohne Paket.
 
@@ -88,3 +88,16 @@ Auftrag vom 04.11.: Alle Seiten auf verschenkte Bildschirmfläche prüfen, Eleme
 - Profilwahl: größere, von Bildschirmgröße und Schriftregler abhängige Profilfelder; das Begrüßungsbild bleibt unverändert. Eingangsfilme verwenden den verfügbaren Dialogbereich ohne Beschnitt.
 
 Prüfung: Chromium bei 320/393/412/806/980/844/1440 Pixel Breite, hohen Hochformatansichten bis 2080 Pixel, 100/150/200 Prozent Schrift. Alle drei Variantenwahlen und laufenden Spiele, Bildsuche, vollständig geladene Ergebnisse samt eingebettetem Diagramm, Profilwahl und Eingangsfilm geprüft; keine JavaScript-Fehler und kein seitlicher Überlauf. Die Aufgabenkarte muss mindestens 95 Prozent der verfügbaren Aufgabenfläche abdecken und direkt an deren Oberkante beginnen. Hochformatansichten der drei Aufgabenarten und Ergebnisübersicht visuell geprüft. Alle vorhandenen Funktionsprüfungen und die Offline-Prüfung bestehen. Physische Android-/iOS-Geräte wurden nicht geprüft.
+
+
+## 2026.11.04.4: Große Hauptaktion, Spielmenü und sichere Tablet-Seitenleisten
+
+Bestätigte Vorgaben vom 04.11.: Der gelesen-Button muss deutlich größer sein. Die drei Bedienknöpfe dürfen auf dem Handy nicht nebeneinander gequetscht werden. Im iPad-Querformat dürfen Spielfeld und Rückmeldungen weder Bedienung noch Zoom überdecken. Den Speicherhinweis nur bei der Anmeldung nennen. Der bisherige Textexport ist keine Wiederherstellungssicherung und wird auf Wunsch aus der Oberfläche entfernt; eine neue Sicherungs-/Importfunktion ist nicht beauftragt.
+
+- gelesen nutzt die gesamte innere Aufgabenbreite mit mindestens 104 Pixeln Höhe und mindestens 34 Pixeln Schrift. Auch Wort hören, erneut lesen, Starten und Ergebnisaktionen erhalten größere Flächen.
+- Handy/hohes Hochformat: ein deutliches Spielmenü öffnet die drei Funktionen Ergebnisse, Variante wählen und Runde beenden untereinander. Im kurzen Querformat öffnet es sich seitlich innerhalb des Bildschirms. Auf großen Tablets bleibt das Menü aufgeklappt in einer eigenen Seitenleiste.
+- Zeit/Fortschritt, Spielfeld und Bedienung sind echte, getrennte Rasterelemente. Die zuvor verschachtelte Darstellung mit display:contents ist entfernt. Das Spielfeld hat eine eigene begrenzte Scrollfläche und kann nicht über die Seitenleisten malen.
+- Rückmeldungen nach einer Antwort reservieren ihren eigenen Platz und verschwinden nicht hinter der Aufgabenkarte. Schriftregler für Suchwörter erscheinen erst in der Bildsuche.
+- Speicherhinweis ausschließlich bei der Profilanmeldung. Die wiederholte Fußzeile und der Knopf Ergebnisse als Text speichern sind entfernt. Gespeicherte Profile und Ergebnisse bleiben erhalten.
+
+Prüfung: 13 Handy-/Tablet-/PC-Formate einschließlich iPad 768×1024/1024×768, 820×1180/1180×820 und 1024×1366/1366×1024; 100/150/200 Prozent Menuschrift. Alle Aufgabenarten, Bildsuche, Ergebnisübersicht, Profilwahl und Eingangsfilm geprüft. Zusätzlich tatsächliche Trefferprüfung per elementFromPoint: Zeit, Fortschritt, Menü und Zoom/Schriftregler liegen sichtbar und anklickbar außerhalb des Spielfelds, auch bei 200 Prozent Bildzoom. Drehen einer laufenden Runde in allen drei Spielen und Feedback nach falschen Antworten geprüft. Großer gelesen-Button und das Fehlen von Textexport/Fußzeile sind automatisiert geprüft. Vorhandene Funktionsprüfungen bestehen. Kein Test auf physischer iPad-Hardware.
