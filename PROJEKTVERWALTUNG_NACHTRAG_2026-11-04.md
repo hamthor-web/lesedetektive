@@ -6,7 +6,7 @@ Stand: 04.11.2026. Grundlage: aktuelle GitHub-Spielakte PROJEKTSTAND.md, Commit 
 
 | Spiel | Bearbeitungsstand | Offen |
 |---|---|---|
-| Lesedetektive | Mobile Darstellung Bedienung auf Handy und Tablet korrigiert (2026.11.04.4); technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
+| Lesedetektive | Mobile Darstellung Version 2026.11.04.4 auf Handy und Tablet von der Nutzerin bestätigt; Bildschirmvorschau verfügbar; technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
 
 ## Bestätigte Anforderungen
 
@@ -21,3 +21,5 @@ Bestätigte Ergänzung: Die gesamte verfügbare Bildschirmfläche soll genutzt w
 Erweiterung: Alle Seiten einschließlich Aufgaben, Bildsuche, Variantenwahl, Profilen, Filmen und Ergebnissen auf Aufgabenfokus und Flächennutzung geprüft und überarbeitet. Im Hochformat Bedienung unter der Aufgabe, im Querformat seitlich. Responsiv und funktional geprüft; Nutzung auf physischen Geräten bleibt als Rückmeldung offen.
 
 Bestätigte Ergänzung: gelesen als große Hauptaktion, Handy-Bedienung als aufklappbares Menü mit senkrechten Einträgen. iPad-Querformat mit getrennten Spielfeld- und Bedienbereichen. Speicherhinweis nur bei Anmeldung. Textexport entfernt, weil er keine wiederherstellbare Sicherung enthält; kein Import neu beauftragt. Erweiterte Browserprüfungen einschließlich Drehung und anklickbarer Seitenregler bestanden.
+
+Abschluss: Darstellung auf Handy und Tablet durch die Nutzerin bestätigt. Separate Bildschirmvorschau mit neun Größen, Hoch-/Querformatvergleich und direkt auswählbaren App-Ansichten erstellt. App-Programmstand bleibt 2026.11.04.4.

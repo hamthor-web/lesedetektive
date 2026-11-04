@@ -101,3 +101,12 @@ Bestätigte Vorgaben vom 04.11.: Der gelesen-Button muss deutlich größer sein.
 - Speicherhinweis ausschließlich bei der Profilanmeldung. Die wiederholte Fußzeile und der Knopf Ergebnisse als Text speichern sind entfernt. Gespeicherte Profile und Ergebnisse bleiben erhalten.
 
 Prüfung: 13 Handy-/Tablet-/PC-Formate einschließlich iPad 768×1024/1024×768, 820×1180/1180×820 und 1024×1366/1366×1024; 100/150/200 Prozent Menuschrift. Alle Aufgabenarten, Bildsuche, Ergebnisübersicht, Profilwahl und Eingangsfilm geprüft. Zusätzlich tatsächliche Trefferprüfung per elementFromPoint: Zeit, Fortschritt, Menü und Zoom/Schriftregler liegen sichtbar und anklickbar außerhalb des Spielfelds, auch bei 200 Prozent Bildzoom. Drehen einer laufenden Runde in allen drei Spielen und Feedback nach falschen Antworten geprüft. Großer gelesen-Button und das Fehlen von Textexport/Fußzeile sind automatisiert geprüft. Vorhandene Funktionsprüfungen bestehen. Kein Test auf physischer iPad-Hardware.
+
+
+## 04.11.2026: Geräteprüfung durch die Nutzerin und Bildschirmvorschau
+
+Die Nutzerin hat Version 2026.11.04.4 auf Handy und Tablet geprüft und die Darstellung mit „perfekt“ bestätigt. Handy-Querformat bleibt gestalterisch eingeschränkt; für Lesen und Suchen wird dort Hochformat bevorzugt. Keine Hochformatsperre oder weitere Layoutänderung beauftragt.
+
+Auf Wunsch wurde separat `Lesedetektive_Bildschirmvorschau.html` erstellt: neun typische Darstellungsflächen (Handy 360×800, 390×844, 412×915; Tablet 768×1024, 820×1180, 1024×1366; Laptop/Monitor 1366×768, 1440×900, 1920×1080), Hoch-/Querformat und direkte Gegenüberstellung. Profilwahl, Spielauswahl, drei Rundeneinstellungen, drei Aufgabenarten, Bildsuche und beide Ergebnisansichten sind direkt erreichbar und bedienbar. Der Rahmen erhält echte ausgewählte CSS-Abmessungen und wird nur für die Anzeige skaliert. Beim Drehen bleibt die laufende Aufgabe erhalten. Originalgröße und Auswahl-Schriftgrößen 100/150/200 Prozent sind einstellbar.
+
+Die Vorschau verwendet den Programmstand 2026.11.04.4 mit isoliertem Beispielspeicher. Bilder sind eingebettet; optionale Eingangsfilme werden weiterhin online geladen. Die veröffentlichten Spielstände werden nicht berührt. Geprüft als lokal geöffnete Datei: alle Ansichten, beide Rahmenformate, Vergleichsmodus, Frame-Innenbreite und Erhalt der Aufgabe beim Drehen sowie schmale Vorschauoberfläche. Keine JavaScript-Fehler. Die Vorschau bildet Layouts im verwendeten Browser ab, keine gerätespezifischen Browserleisten oder vollständige Safari-Emulation.
