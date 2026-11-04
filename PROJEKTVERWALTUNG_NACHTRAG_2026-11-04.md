@@ -6,7 +6,7 @@ Stand: 04.11.2026. Grundlage: aktuelle GitHub-Spielakte PROJEKTSTAND.md, Commit 
 
 | Spiel | Bearbeitungsstand | Offen |
 |---|---|---|
-| Lesedetektive | Mobile Darstellung fertiggestellt und veröffentlicht (2026.11.04.2); technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
+| Lesedetektive | Mobile Darstellung für alle Ansichten überarbeitet (2026.11.04.3); technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
 
 ## Bestätigte Anforderungen
 
@@ -17,3 +17,5 @@ Veröffentlichung über GitHub Pull Request 1 abgeschlossen; Version 2026.11.04.
 Die vollständige technische Spielakte liegt in PROJEKTSTAND.md. Der Nachtrag ergänzt die zentrale Projektverwaltung, ohne ältere Quellen zu ersetzen.
 
 Bestätigte Ergänzung: Die gesamte verfügbare Bildschirmfläche soll genutzt werden. Höhere Spielbalken erhalten den freien Platz; unter den Speicherhinweisen bleibt kein großer leerer Seitenbereich.
+
+Erweiterung: Alle Seiten einschließlich Aufgaben, Bildsuche, Variantenwahl, Profilen, Filmen und Ergebnissen auf Aufgabenfokus und Flächennutzung geprüft und überarbeitet. Im Hochformat Bedienung unter der Aufgabe, im Querformat seitlich. Responsiv und funktional geprüft; Nutzung auf physischen Geräten bleibt als Rückmeldung offen.

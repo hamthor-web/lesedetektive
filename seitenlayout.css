@@ -1,0 +1,70 @@
+/* The task owns the workspace; utility controls stay outside it. */
+body.playing>main{width:100%;max-width:none;height:100dvh;padding:clamp(8px,1vw,18px)}
+body.playing>main>header{display:none}
+body.playing #play{height:100%;min-height:0;gap:clamp(8px,1.2vw,18px)}
+body.playing .clockbar{display:contents}
+body.playing .playfield{padding:0;gap:10px;min-width:0;scrollbar-gutter:auto;scroll-padding:12px}
+body.playing #task{margin:0;min-height:100%;width:100%;flex:1 0 auto;display:flex;flex-direction:column;justify-content:space-evenly;gap:clamp(12px,1.7svh,28px);padding:clamp(16px,3vw,44px);font-size:clamp(22px,min(3.8vw,3svh),38px);line-height:1.5;overflow-wrap:break-word}
+body.playing #task>p{margin:0}
+body.playing #task .eyebrow{font-size:clamp(18px,2.4vw,26px);line-height:1.4}
+body.playing #task h2{font-size:clamp(28px,min(4.7vw,4.2svh),54px);line-height:1.3;margin:0}
+body.playing #task .reading{font-size:clamp(40px,min(9vw,8svh),100px);line-height:1.45;flex:1 0 auto;min-height:clamp(120px,24svh,420px);padding:12px 0;display:grid;place-content:center;overflow-wrap:anywhere}
+body.playing #task .reading.story{font-size:clamp(30px,min(5.5vw,5svh),64px);line-height:1.55}
+body.playing #task .question{font-size:inherit;line-height:1.5}
+body.playing #task .duel,body.playing #task .answers{margin:0;gap:clamp(12px,2vw,24px);flex:1 0 auto}
+body.playing #task .answers button,body.playing #task .duel button{background-image:url('assets/button-responsive.png')!important;font-size:clamp(28px,min(5.2vw,4.7svh),60px);line-height:1.4;min-height:clamp(80px,10svh,160px);padding:24px 26px 24px 40px}
+body.playing #task #hear,body.playing #task #read,body.playing #task #reread,body.playing #task #retryImage{font-size:clamp(22px,3vw,34px);min-height:64px}
+body.playing .round-stats{min-width:0;gap:14px;padding:8px 12px;background:#fffdf4;border:1px solid #bfcebf;border-radius:16px;flex-shrink:0}
+body.playing .round-stats span{font-size:clamp(16px,2vw,22px)}
+body.playing .round-stats strong,body.playing .round-stats #clock{font-size:clamp(26px,3vw,36px)}
+body.playing .round-actions{min-width:0;gap:8px}
+body.playing .round-actions button:not(.word-size-controls button){font-size:clamp(16px,2vw,22px);line-height:1.35;min-height:64px;padding:16px 12px 16px 26px}
+body.playing.searching-image #task{padding:12px;justify-content:flex-start;gap:12px;flex:1 0 auto}
+body.playing.searching-image #words{margin:0;flex:0 0 auto}
+body.playing.searching-image #task>p{flex:0 0 auto;text-align:center}
+@media(orientation:portrait){
+ body.playing #play{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto}
+ body.playing .round-stats{grid-column:1;grid-row:1;display:flex;justify-content:center;align-items:center;flex-wrap:wrap}
+ body.playing .playfield{grid-column:1;grid-row:2}
+ body.playing .round-actions{grid-column:1;grid-row:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+ body.playing .round-actions .word-size-controls{grid-column:1/-1}
+ body.playing #task .duel{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(orientation:portrait) and (max-width:420px){body.playing #task .duel{grid-template-columns:1fr}}
+@media(orientation:landscape){
+ body.playing #play{grid-template-columns:clamp(105px,13vw,180px) minmax(0,1fr) clamp(150px,17vw,240px);grid-template-rows:minmax(0,1fr)}
+ body.playing .round-actions{grid-column:3;grid-row:1;align-self:start}
+ body.playing .round-stats{grid-column:1;grid-row:1;align-self:start}
+ body.playing .playfield{grid-column:2;grid-row:1}
+ body.playing #task .reading{min-height:120px}
+}
+/* Configuration uses the workspace, without forcing small controls to stretch. */
+body:not(.playing):not(.choosing):has(#setup:not([hidden])){min-height:100dvh;display:flex;flex-direction:column}
+body:has(#setup:not([hidden]))>main{width:min(100%,1500px);flex:1;display:flex;flex-direction:column;gap:16px}
+#setup{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;gap:clamp(12px,1.5svh,24px);margin:0;font-size:calc(clamp(20px,min(3vw,2.6svh),30px) * var(--menu-text-scale))}
+#setup>h2,#setup>p{margin:0}#setup fieldset{margin:0}#setup #packageOptions{max-width:none}
+#setup .hint,#setup details,#setupNotice{font-size:.9em;margin:0}#setup #prepare:empty{display:none}
+#setup #start,#setup #setupProgress{font-size:inherit;min-height:70px}
+/* Results adapt to the content reported by their frame. */
+body:has(#progressScreen:not([hidden]))>.zoom-controls{display:none}
+body:has(#progressScreen:not([hidden]))>main{width:min(100%,1500px)}
+#progressScreen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0;font-size:clamp(20px,2.5vw,30px)}
+#progressScreen>p,#progressScreen>h2,#progressScreen>#resume,#progressFrame{grid-column:1/-1;margin:0}
+#progressScreen>button{margin:0;min-width:0;font-size:clamp(18px,2vw,26px)}
+#progressScreen #resultTitle{font-size:clamp(30px,4.5vw,54px)}
+#progressScreen #resultText{font-size:inherit}#progressFrame{min-height:0;height:400px}
+@media(max-width:500px){#progressScreen{grid-template-columns:1fr}#progressScreen>button{grid-column:1}}
+#profileDialog .profile-panel{width:min(100%,840px);font-size:calc(clamp(20px,min(3.5vw,2.8svh),30px) * var(--menu-text-scale))}
+#profileDialog .profile-list button{font-size:1.2em;min-height:80px}
+#introDialog{width:min(98vw,1400px);max-height:98dvh;padding:clamp(12px,2vw,24px)}
+#introDialog video{max-height:75dvh}
+#progressScreen>*{min-width:0;max-width:100%;overflow-wrap:anywhere}
+@media(max-width:500px){#progressScreen{grid-template-columns:minmax(0,1fr)}}
+/* Answer rows remain large targets without stretching the paper into tall columns. */
+body.playing #task .duel,body.playing #task .answers{flex:0 0 auto}
+body.playing #task .answers button,body.playing #task .duel button{font-size:clamp(30px,min(7vw,6svh),76px);min-height:clamp(84px,9svh,160px)}
+body.playing #task .reading{font-size:clamp(48px,min(13vw,12svh),160px)}
+body.playing #task .reading.story{font-size:clamp(32px,min(6.5vw,6svh),80px)}
+body:has(#progressScreen:not([hidden]))>main>header .app-logo,body:has(#progressScreen:not([hidden]))>main>header h1,body:has(#progressScreen:not([hidden]))>main>header [data-profile-switch]{display:none}
+#progressScreen .result-actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px}
+#progressScreen .result-actions button{min-width:0;font-size:clamp(18px,2.5vw,26px)}

@@ -83,3 +83,10 @@ Profilnamen mittig; neue gelieferte Würstchen-Grafik als Logo und App-/Home-Bil
 - Drei Spielbalken füllen den freien Platz gleichmäßig aus; Hinweise stehen am unteren Seitenabschluss.
 - Schmale Außenränder und größere Spielschrift auf großen Hochformatbildschirmen.
 - Browserprüfung um 806×1660 und 980×2080 Pixel sowie eine Prüfung auf verschenkte Höhe erweitert.
+
+
+## 2026.11.04.3 – Alle Ansichten mit Aufgabenfokus
+- Aufgabe füllt die Arbeitsfläche; größere Texte und Antworten; Bedienung im Hochformat unten, im Querformat seitlich.
+- Bildgrundgröße aus der tatsächlichen Arbeitsfläche; bisherige 560-Pixel-Grenze entfällt.
+- Varianten-, Profil- und Ergebnisansichten verbessert; Ergebnisgrafik ohne unnötige Mindesthöhe oder leere Spalten.
+- Responsive Browserprüfungen umfassen jetzt Aufgabenflächennutzung, vollständig geladene Ergebnisse und Filme.

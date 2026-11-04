@@ -1,4 +1,4 @@
-# Lesedetektive – 2026.11.04.2
+# Lesedetektive – 2026.11.04.3
 
 Drei getrennte Spieloberflächen: Lesen und im Bild suchen, Was zischt denn da? (CH/SCH) und Wie klingt es? (ich/ach). Ohne Zeit mit 10/15/20 Aufgaben sowie eine Minute und zehn Aufgaben mit Stoppuhr. Auswahl zwischen wiederholbaren Paketen und Zufall; 20 Wortpaare ohne Paket.
 
@@ -75,3 +75,16 @@ Auf ausdrücklichen Auftrag vom 04.11.2026 fertiggestellt und über Pull Request
 Korrektur nach dem Handy-Screenshot vom 04.11.: Version .1 ließ unter den Inhalten unnötig viel Fläche leer. Die Hauptauswahl verwendet jetzt die gesamte sichtbare Höhe. Kopfbereich, Schriftregler und Hinweise nehmen ihren benötigten Platz ein; die drei gleich hohen Spielbalken erhalten die übrige Fläche und wachsen dabei in der Höhe. Auch die Breite wird bis auf einen schmalen Rand genutzt (maximal 1600 Pixel auf großen Monitoren). Die Spielschrift passt sich zusätzlich an die Bildschirmgröße an. Bei großem Text oder wenig Höhe wächst die Seite nach unten, statt Inhalte abzuschneiden.
 
 Browserprüfung mit Chromium: 320/393/412/806/980/844/1440 Pixel Breite, hohe Hochformatbildschirme bis 2080 Pixel, 100/150/200 Prozent Schrift, alle Variantenwahlen und laufenden Spiele, Profile sowie sichtbarer Offline-Hinweis. Zusätzliche Prüfung, dass der Seitenabschluss mindestens den unteren Bildschirmrand erreicht; kein horizontales Überlaufen. Handy- und PC-Aufteilung visuell geprüft.
+
+
+## 2026.11.04.3: Alle Spielansichten auf die Aufgabe ausrichten
+
+Auftrag vom 04.11.: Alle Seiten auf verschenkte Bildschirmfläche prüfen, Elemente sinnvoll verteilen und Aufgaben in den Fokus stellen.
+
+- Laufende Spiele: Kopfzeile ausgeblendet; Aufgabenkarte füllt die Arbeitsfläche, statt darin mit großen Außenlücken zentriert zu stehen. Größere Lesewörter, Lesetexte, Fragen, Hör- und Antwortbuttons. Im Hochformat stehen Zeit/Fortschritt oben und die Bedienung unten; im Querformat seitlich. Lange Inhalte bleiben scrollbar.
+- Bildsuche: Die Grundgröße des Bildes verwendet im Hochformat die tatsächlich verfügbare Aufgabenfläche; die frühere Begrenzung auf 560 Pixel entfällt. Im Querformat wird die verfügbare Breite genutzt. Bildzoom und Suchwortschrift bleiben getrennt einstellbar; Bilder, Trefferflächen und Sterne bleiben unverändert.
+- Variantenwahl: breitere, höhenabhängige Aufteilung mit lesbarer Schrift und mitwachsenden Feldern.
+- Ergebnisse: keine leere halbe Zusammenfassungsspalte auf kleinen Bildschirmen; Diagrammrahmen passt sich seiner tatsächlichen Inhaltshöhe an, ohne pauschale Mindesthöhe von 720 Pixeln. Übersichtliche gemeinsame Aktionsleiste und keine doppelte große Titelzeile.
+- Profilwahl: größere, von Bildschirmgröße und Schriftregler abhängige Profilfelder; das Begrüßungsbild bleibt unverändert. Eingangsfilme verwenden den verfügbaren Dialogbereich ohne Beschnitt.
+
+Prüfung: Chromium bei 320/393/412/806/980/844/1440 Pixel Breite, hohen Hochformatansichten bis 2080 Pixel, 100/150/200 Prozent Schrift. Alle drei Variantenwahlen und laufenden Spiele, Bildsuche, vollständig geladene Ergebnisse samt eingebettetem Diagramm, Profilwahl und Eingangsfilm geprüft; keine JavaScript-Fehler und kein seitlicher Überlauf. Die Aufgabenkarte muss mindestens 95 Prozent der verfügbaren Aufgabenfläche abdecken und direkt an deren Oberkante beginnen. Hochformatansichten der drei Aufgabenarten und Ergebnisübersicht visuell geprüft. Alle vorhandenen Funktionsprüfungen und die Offline-Prüfung bestehen. Physische Android-/iOS-Geräte wurden nicht geprüft.

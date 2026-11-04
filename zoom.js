@@ -5,7 +5,7 @@
   function apply(){
     document.documentElement.style.setProperty('--menu-text-scale',values.menu/100);
     const stage=document.querySelector('.stage'),field=document.getElementById('playfield');
-    if(stage&&field&&field.clientWidth){const portrait=typeof window!=='undefined'&&window.innerHeight>=window.innerWidth;const base=Math.max(140,Math.min(560,field.clientWidth-30,portrait?Math.max(210,window.innerHeight-220)*2/3:560));stage.style.width=Math.round(base*values.image/100)+'px';stage.style.maxWidth='none';}
+    if(stage&&field&&field.clientWidth){const portrait=typeof window!=='undefined'&&window.innerHeight>=window.innerWidth;const words=document.getElementById('words'),task=stage.parentElement,taskStyle=task&&window.getComputedStyle?.(task),padding=taskStyle?parseFloat(taskStyle.paddingTop)+parseFloat(taskStyle.paddingBottom):24;const width=Math.max(140,(task?.clientWidth||field.clientWidth)-padding);const availableHeight=Math.max(210,(field.clientHeight||window.innerHeight-150)-(words?.offsetHeight||60)-100-padding);const base=portrait?Math.max(140,Math.min(width,availableHeight*2/3)):width;stage.style.width=Math.round(base*values.image/100)+'px';stage.style.maxWidth='none';}
     for(const {bar,kind}of bars){const levels=kind==='image'?imageLevels:menuLevels,value=values[kind];bar.hidden=kind==='image'&&!stage;bar.querySelector('[data-zoom="reset"]').textContent=value+' %';bar.querySelector('[data-zoom="out"]').disabled=value===levels[0];bar.querySelector('[data-zoom="in"]').disabled=value===levels.at(-1);}
     for(const kind of Object.keys(values))try{localStorage.setItem(keys[kind],String(values[kind]));}catch{}
   }
