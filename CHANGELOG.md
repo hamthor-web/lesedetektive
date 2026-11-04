@@ -75,4 +75,5 @@ Profilnamen mittig; neue gelieferte Würstchen-Grafik als Logo und App-/Home-Bil
 - Große, beschriftete Schriftgrößensteuerung; Spielbuttons wachsen in der Höhe.
 - Speicherhinweise als lesbare zusammenhängende Bereiche.
 - Unabhängiger Bildzoom und Spielinhalte bleiben erhalten.
-- Visuelle Geräteprüfung noch offen; technische Bestandstests bestanden.
+- Responsive Browserprüfung bei fünf Bildschirmgrößen und 100/150/200 Prozent bestanden; Handy- und PC-Ansicht visuell kontrolliert.
+- Lange Variantenüberschrift bricht auch auf 320 Pixeln um; Bild-Ladeereignisse nach Verlassen einer Runde abgesichert.

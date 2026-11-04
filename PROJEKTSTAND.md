@@ -1,4 +1,4 @@
-# Lesedetektive – 2026.11.03.1
+# Lesedetektive – 2026.11.04.1
 
 Drei getrennte Spieloberflächen: Lesen und im Bild suchen, Was zischt denn da? (CH/SCH) und Wie klingt es? (ich/ach). Ohne Zeit mit 10/15/20 Aufgaben sowie eine Minute und zehn Aufgaben mit Stoppuhr. Auswahl zwischen wiederholbaren Paketen und Zufall; 20 Wortpaare ohne Paket.
 
@@ -57,12 +57,14 @@ Profilnamen sind waagerecht und senkrecht im Button zentriert. Das gelieferte PN
 Lesewörter beginnen mit 36 px, längere Lesetexte mit 28 px, Fragen mit 24 px, Antwortbuttons mit 28 px und Suchwörter mit 26 px. Suchwörter bleiben unabhängig auf bis zu 52 px vergrößerbar. Die wichtigsten Bedienknöpfe verwenden 18 px. Enge Wortpaare stehen bei Bedarf untereinander. Texte werden nicht automatisch verkleinert; die Aufgabenfläche bleibt scrollbar.
 
 
-## 2026.11.04.1: Mobile Lesbarkeit – separate Arbeitsfassung
+## 2026.11.04.1: Mobile Lesbarkeit
 
-Anlass: Auf dem Handy sind Hauptauswahl, Ansichtsregler und Speicherhinweis zu klein. Bestätigte Vorgabe vom 04.11.: Vergrößerte Schrift muss innerhalb der Bildschirmbreite umbrechen; Spielbalken wachsen in der Höhe. Der Regler muss gut sichtbar und bedienbar sein. Der Speicherhinweis wird zusammenhängend gestaltet. Die Fassung muss auch am PC prüfbar sein.
+Anlass: Auf dem Handy sind Hauptauswahl, Ansichtsregler und Speicherhinweis zu klein. Bestätigte Vorgabe vom 04.11.: Vergrößerte Schrift muss innerhalb der Bildschirmbreite umbrechen; Spielbalken wachsen in der Höhe. Der Regler muss gut sichtbar und bedienbar sein. Der Speicherhinweis wird zusammenhängend gestaltet. Die spätere Klarstellung zum PC bezog sich auf die Auffindbarkeit des Chats, nicht auf einen zusätzlichen Spielentwurf.
 
 Die frühere Ganzseiten-Vergrößerung wird in Auswahl, Variantenwahl und Profilen durch Schriftvergrößerung mit Umbruch ersetzt. Schriftgröße 100–200 Prozent; frühere gespeicherte Werte unter 100 werden auf 100 angehoben. Der Bildzoom bleibt unabhängig bei 35–200 Prozent. Schriftregler: gut sichtbare Beschriftung und mindestens 52 Pixel hohe Tasten. Hauptauswahl ohne erzwungene Bildschirmhöhe; große Texte verlängern die Seite nach unten. Speicherhinweise stehen in lesbaren, farblich hinterlegten Bereichen. Bilder und Aufgaben bleiben unverändert.
 
-Technische Prüfungen für Datenintegrität, Spielabläufe, Fortschritt, Intro, Profile, Navigation, Schrift, Zoom und Offline-Paket bestehen. Der zusätzliche Playwright-Test `tests/mobile-layout.cjs` prüft 320/393/412/844/1440 Pixel bei 100/150/200 Prozent. Er konnte hier nicht ausgeführt werden: kein installierter Browser, Browserdownload liefert unvollständige Archive. Daher noch keine visuelle Freigabe auf Android, iPhone/iPad oder PC.
+Technische Prüfungen für Datenintegrität, Spielabläufe, Fortschritt, Intro, Profile, Navigation, Schrift, Zoom und Offline-Paket bestehen. Der Browser-Test `tests/mobile-layout.cjs` besteht mit Chromium: 320/393/412/844/1440 Pixel bei 100/150/200 Prozent, alle drei Variantenwahlen und laufenden Spiele einschließlich Bildsuche, Profilwechsel, Schriftregler und gespeicherte Schriftgröße. Kein horizontales Überlaufen der Seite, keine JavaScript-Fehler. Handyansicht bei 150 Prozent und PC-Ansicht visuell kontrolliert. Die besonders lange Überschrift in der Variantenwahl bricht jetzt auch bei 320 Pixeln um. Die Spielbalken verwenden eine zusätzliche Kopie des gelieferten Hintergrundes ohne transparente Außenränder; das Original bleibt erhalten. Suchbild- und Suchwortregler haben mindestens 44 Pixel große Tasten.
 
-Bereitstellung auf separatem Branch `fix/mobile-lesbarkeit`; Hauptversion noch unverändert. Nächster Schritt: Sichtprüfung der Arbeitsfassung und anschließend Übernahme/Veröffentlichung.
+Ein während der Prüfung entdeckter Fehler beim schnellen Verlassen der Bildsuche ist korrigiert: verspätete Bild-Ladeereignisse greifen nicht mehr auf eine bereits beendete Runde zu.
+
+Auf ausdrücklichen Auftrag vom 04.11.2026 fertiggestellt und zur Übernahme in die veröffentlichte Spielversion vorbereitet. Veröffentlichung erfolgt über Pull Request 1. Profile und Ergebnisse werden durch das Update nicht gelöscht. Eine Prüfung auf physischen Android-/iOS-Geräten wurde nicht durchgeführt.

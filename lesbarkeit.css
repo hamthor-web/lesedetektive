@@ -42,3 +42,9 @@ footer strong,footer span{display:block}footer span{margin-top:4px}
  .profile-brand{flex-wrap:wrap}.profile-brand h2{min-width:0}
 }
 @media print{body>.zoom-controls{display:none}}
+#setup legend{overflow-wrap:anywhere;hyphens:auto;white-space:normal}
+/* Keep text inside the opaque paper, including at large font settings. */
+#home .game-menu>button{background-image:url('assets/button-responsive.png')!important;padding-block:1em}
+body:not(.playing) header h1{font-size:clamp(28px,5vw,40px)}
+@media(max-width:600px){body:not(.playing) header h1{font-size:28px}}
+body.playing .zoom-controls button,body.playing .word-size-controls button{min-width:44px!important;min-height:44px!important}
