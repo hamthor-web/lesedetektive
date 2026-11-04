@@ -1,4 +1,4 @@
-# Lesedetektive – 2026.11.04.1
+# Lesedetektive – 2026.11.04.2
 
 Drei getrennte Spieloberflächen: Lesen und im Bild suchen, Was zischt denn da? (CH/SCH) und Wie klingt es? (ich/ach). Ohne Zeit mit 10/15/20 Aufgaben sowie eine Minute und zehn Aufgaben mit Stoppuhr. Auswahl zwischen wiederholbaren Paketen und Zufall; 20 Wortpaare ohne Paket.
 
@@ -68,3 +68,10 @@ Technische Prüfungen für Datenintegrität, Spielabläufe, Fortschritt, Intro, 
 Ein während der Prüfung entdeckter Fehler beim schnellen Verlassen der Bildsuche ist korrigiert: verspätete Bild-Ladeereignisse greifen nicht mehr auf eine bereits beendete Runde zu.
 
 Auf ausdrücklichen Auftrag vom 04.11.2026 fertiggestellt und über Pull Request 1 in die Hauptversion übernommen (Merge f36fc5c). Veröffentlichung erfolgreich: Version 2026.11.04.1 am 04.11.2026 um 09:57 Uhr online geprüft. Profile und Ergebnisse werden durch das Update nicht gelöscht. Eine Prüfung auf physischen Android-/iOS-Geräten wurde nicht durchgeführt.
+
+
+## 2026.11.04.2: Verfügbare Bildschirmhöhe ausnutzen
+
+Korrektur nach dem Handy-Screenshot vom 04.11.: Version .1 ließ unter den Inhalten unnötig viel Fläche leer. Die Hauptauswahl verwendet jetzt die gesamte sichtbare Höhe. Kopfbereich, Schriftregler und Hinweise nehmen ihren benötigten Platz ein; die drei gleich hohen Spielbalken erhalten die übrige Fläche und wachsen dabei in der Höhe. Auch die Breite wird bis auf einen schmalen Rand genutzt (maximal 1600 Pixel auf großen Monitoren). Die Spielschrift passt sich zusätzlich an die Bildschirmgröße an. Bei großem Text oder wenig Höhe wächst die Seite nach unten, statt Inhalte abzuschneiden.
+
+Browserprüfung mit Chromium: 320/393/412/806/980/844/1440 Pixel Breite, hohe Hochformatbildschirme bis 2080 Pixel, 100/150/200 Prozent Schrift, alle Variantenwahlen und laufenden Spiele, Profile sowie sichtbarer Offline-Hinweis. Zusätzliche Prüfung, dass der Seitenabschluss mindestens den unteren Bildschirmrand erreicht; kein horizontales Überlaufen. Handy- und PC-Aufteilung visuell geprüft.

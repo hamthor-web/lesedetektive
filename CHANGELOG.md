@@ -77,3 +77,9 @@ Profilnamen mittig; neue gelieferte Würstchen-Grafik als Logo und App-/Home-Bil
 - Unabhängiger Bildzoom und Spielinhalte bleiben erhalten.
 - Responsive Browserprüfung bei fünf Bildschirmgrößen und 100/150/200 Prozent bestanden; Handy- und PC-Ansicht visuell kontrolliert.
 - Lange Variantenüberschrift bricht auch auf 320 Pixeln um; Bild-Ladeereignisse nach Verlassen einer Runde abgesichert.
+
+
+## 2026.11.04.2 – Ganze Bildschirmhöhe für die Hauptauswahl
+- Drei Spielbalken füllen den freien Platz gleichmäßig aus; Hinweise stehen am unteren Seitenabschluss.
+- Schmale Außenränder und größere Spielschrift auf großen Hochformatbildschirmen.
+- Browserprüfung um 806×1660 und 980×2080 Pixel sowie eine Prüfung auf verschenkte Höhe erweitert.

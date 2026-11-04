@@ -2,10 +2,12 @@
 :root{--menu-text-scale:1}
 body:not(.playing)>main,.profile-welcome .profile-panel{zoom:1!important}
 body:not(.playing)>main{max-width:100%;min-width:0}
-body.choosing>main{width:min(100%,900px);height:auto;min-height:calc(100svh - 88px);display:flex;flex-direction:column;gap:20px;padding:20px}
-body.choosing #home{flex:0 0 auto;width:100%;display:flex;gap:20px;justify-content:flex-start}
+body.choosing{display:flex;flex-direction:column;min-height:100dvh}
+body.choosing>.zoom-controls{flex:0 0 auto}
+body.choosing>main{width:min(100%,1600px);height:auto;min-height:0;flex:1 0 auto;display:flex;flex-direction:column;gap:clamp(12px,1.5svh,24px);padding:clamp(12px,2vw,28px)}
+body.choosing #home{flex:1 0 auto;width:100%;display:flex;gap:clamp(14px,2svh,28px);justify-content:flex-start}
 body.choosing .home-intro{margin:12px 0 0;font-size:calc(24px * var(--menu-text-scale));line-height:1.4}
-body.choosing .game-menu{width:100%;gap:18px;margin:0}
+body.choosing .game-menu{flex:1 0 auto;width:100%;gap:clamp(14px,2svh,28px);margin:0;grid-template-rows:repeat(3,minmax(min-content,1fr))}
 #home .game-menu>button{width:100%;height:auto;min-height:104px;font-size:calc(26px * var(--menu-text-scale));line-height:1.35;padding:26px 28px 26px 52px;white-space:normal;overflow-wrap:break-word;hyphens:auto}
 #home .game-menu small{font-size:calc(21px * var(--menu-text-scale));line-height:1.4;padding:6px 0 0}
 body:not(.playing) header{gap:12px;min-width:0}
@@ -31,7 +33,7 @@ footer strong,footer span{display:block}footer span{margin-top:4px}
 #profileDialog .profile-list button{font-size:calc(26px * var(--menu-text-scale));white-space:normal}
 #profileDialog .profile-install [data-app-status],#profileDialog .profile-storage{font-size:calc(17px * var(--menu-text-scale))}
 @media(max-width:600px){
- body.choosing>main{padding:16px;gap:20px;min-height:0}
+ body.choosing>main{padding:12px;min-height:0}
  body:not(.playing) main>header{display:grid;grid-template-columns:46px minmax(0,1fr);align-items:center;gap:10px}
  body:not(.playing) header .app-logo{grid-column:1;grid-row:1;width:46px;height:64px}
  body:not(.playing) header h1{grid-column:2;grid-row:1;margin:0;font-size:calc(28px * var(--menu-text-scale))}
@@ -48,3 +50,8 @@ footer strong,footer span{display:block}footer span{margin-top:4px}
 body:not(.playing) header h1{font-size:clamp(28px,5vw,40px)}
 @media(max-width:600px){body:not(.playing) header h1{font-size:28px}}
 body.playing .zoom-controls button,body.playing .word-size-controls button{min-width:44px!important;min-height:44px!important}
+
+/* Available height belongs to the games, rather than an empty page tail. */
+#home .game-menu>button{font-size:calc(clamp(26px,min(4.2vw,4svh),54px) * var(--menu-text-scale));min-height:clamp(100px,15svh,260px);padding-block:.8em}
+#home .game-menu small{font-size:.8em}
+body.choosing>main>header,body.choosing>main>footer,body.choosing .home-intro,body.choosing .platform-actions{flex-shrink:0}
