@@ -68,3 +68,11 @@ Laufende Stoppuhr kompakt in Minuten:Sekunden; dadurch bleibt der Bildzoom auch 
 ## 2026.11.03.9 – 03.11.2026
 
 Profilnamen mittig; neue gelieferte Würstchen-Grafik als Logo und App-/Home-Bildschirm-Symbole. Größere Mindestschriften für Aufgaben, Lesetexte, Antwortbuttons und Suchwörter; Wortpaare können auf schmalen Geräten untereinander stehen.
+
+
+## 2026.11.04.1 – Mobile Schriftvergrößerung mit Umbruch
+- Auswahl und Profile bleiben beim Vergrößern innerhalb der Bildschirmbreite.
+- Große, beschriftete Schriftgrößensteuerung; Spielbuttons wachsen in der Höhe.
+- Speicherhinweise als lesbare zusammenhängende Bereiche.
+- Unabhängiger Bildzoom und Spielinhalte bleiben erhalten.
+- Visuelle Geräteprüfung noch offen; technische Bestandstests bestanden.

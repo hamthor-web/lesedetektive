@@ -55,3 +55,14 @@ Die laufende Uhr zeigt Minuten:Sekunden, Ergebnisse behalten die ausgeschriebene
 Profilnamen sind waagerecht und senkrecht im Button zentriert. Das gelieferte PNG wird ohne zeichnerische Veränderung als Logo eingesetzt; lediglich transparente Außenränder wurden entfernt und passende Größen für Favicon, Android, iOS und maskierbare App-Symbole erzeugt. Das bisherige große Begrüßungsbild bleibt erhalten.
 
 Lesewörter beginnen mit 36 px, längere Lesetexte mit 28 px, Fragen mit 24 px, Antwortbuttons mit 28 px und Suchwörter mit 26 px. Suchwörter bleiben unabhängig auf bis zu 52 px vergrößerbar. Die wichtigsten Bedienknöpfe verwenden 18 px. Enge Wortpaare stehen bei Bedarf untereinander. Texte werden nicht automatisch verkleinert; die Aufgabenfläche bleibt scrollbar.
+
+
+## 2026.11.04.1: Mobile Lesbarkeit – separate Arbeitsfassung
+
+Anlass: Auf dem Handy sind Hauptauswahl, Ansichtsregler und Speicherhinweis zu klein. Bestätigte Vorgabe vom 04.11.: Vergrößerte Schrift muss innerhalb der Bildschirmbreite umbrechen; Spielbalken wachsen in der Höhe. Der Regler muss gut sichtbar und bedienbar sein. Der Speicherhinweis wird zusammenhängend gestaltet. Die Fassung muss auch am PC prüfbar sein.
+
+Die frühere Ganzseiten-Vergrößerung wird in Auswahl, Variantenwahl und Profilen durch Schriftvergrößerung mit Umbruch ersetzt. Schriftgröße 100–200 Prozent; frühere gespeicherte Werte unter 100 werden auf 100 angehoben. Der Bildzoom bleibt unabhängig bei 35–200 Prozent. Schriftregler: gut sichtbare Beschriftung und mindestens 52 Pixel hohe Tasten. Hauptauswahl ohne erzwungene Bildschirmhöhe; große Texte verlängern die Seite nach unten. Speicherhinweise stehen in lesbaren, farblich hinterlegten Bereichen. Bilder und Aufgaben bleiben unverändert.
+
+Technische Prüfungen für Datenintegrität, Spielabläufe, Fortschritt, Intro, Profile, Navigation, Schrift, Zoom und Offline-Paket bestehen. Der zusätzliche Playwright-Test `tests/mobile-layout.cjs` prüft 320/393/412/844/1440 Pixel bei 100/150/200 Prozent. Er konnte hier nicht ausgeführt werden: kein installierter Browser, Browserdownload liefert unvollständige Archive. Daher noch keine visuelle Freigabe auf Android, iPhone/iPad oder PC.
+
+Bereitstellung auf separatem Branch `fix/mobile-lesbarkeit`; Hauptversion noch unverändert. Nächster Schritt: Sichtprüfung der Arbeitsfassung und anschließend Übernahme/Veröffentlichung.
