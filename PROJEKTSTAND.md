@@ -67,4 +67,4 @@ Technische Prüfungen für Datenintegrität, Spielabläufe, Fortschritt, Intro, 
 
 Ein während der Prüfung entdeckter Fehler beim schnellen Verlassen der Bildsuche ist korrigiert: verspätete Bild-Ladeereignisse greifen nicht mehr auf eine bereits beendete Runde zu.
 
-Auf ausdrücklichen Auftrag vom 04.11.2026 fertiggestellt und zur Übernahme in die veröffentlichte Spielversion vorbereitet. Veröffentlichung erfolgt über Pull Request 1. Profile und Ergebnisse werden durch das Update nicht gelöscht. Eine Prüfung auf physischen Android-/iOS-Geräten wurde nicht durchgeführt.
+Auf ausdrücklichen Auftrag vom 04.11.2026 fertiggestellt und über Pull Request 1 in die Hauptversion übernommen (Merge f36fc5c). Veröffentlichung erfolgreich: Version 2026.11.04.1 am 04.11.2026 um 09:57 Uhr online geprüft. Profile und Ergebnisse werden durch das Update nicht gelöscht. Eine Prüfung auf physischen Android-/iOS-Geräten wurde nicht durchgeführt.

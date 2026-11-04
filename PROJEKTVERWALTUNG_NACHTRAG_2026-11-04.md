@@ -6,12 +6,12 @@ Stand: 04.11.2026. Grundlage: aktuelle GitHub-Spielakte PROJEKTSTAND.md, Commit 
 
 | Spiel | Bearbeitungsstand | Offen |
 |---|---|---|
-| Lesedetektive | Mobile Darstellung fertiggestellt; technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
+| Lesedetektive | Mobile Darstellung fertiggestellt und veröffentlicht (2026.11.04.1); technische und responsive Browserprüfungen bestanden | Rückmeldung aus der Nutzung auf echten Geräten |
 
 ## Bestätigte Anforderungen
 
 Größere Schrift bei unveränderter Bildschirmbreite; Text umbrechen, Balken höher werden lassen. Schriftgrößensteuerung sichtbar und ausreichend groß. Speicherhinweis lesbar zusammenfassen. Die PC-Bemerkung bezog sich laut Klarstellung auf den Chat.
 
-Veröffentlichung über GitHub Pull Request 1. Schrift 100–200 Prozent mit Umbruch, Bildzoom separat. Alle drei Spiele bei fünf Bildschirmgrößen geprüft.
+Veröffentlichung über GitHub Pull Request 1 abgeschlossen; Version 2026.11.04.1 online bestätigt. Schrift 100–200 Prozent mit Umbruch, Bildzoom separat. Alle drei Spiele bei fünf Bildschirmgrößen geprüft.
 
 Die vollständige technische Spielakte liegt in PROJEKTSTAND.md. Der Nachtrag ergänzt die zentrale Projektverwaltung, ohne ältere Quellen zu ersetzen.
