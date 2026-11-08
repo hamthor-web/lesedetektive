@@ -146,3 +146,17 @@ body.playing #task .duel button{width:100%;align-self:stretch}
 }
 #setup .setup-actions>button{margin:0;align-self:stretch}
 #profileDialog .profile-list{grid-auto-rows:1fr}
+
+/* Game selection stays compact instead of filling the remaining screen height. */
+body.choosing .game-menu{
+ flex:0 0 auto;
+ grid-template-rows:repeat(3,1fr);
+ gap:clamp(12px,1.8svh,20px);
+}
+#home .game-menu>button{
+ min-height:100px;
+ font-size:calc(clamp(26px,min(4.2vw,4svh),34px) * var(--menu-text-scale));
+ padding:14px 24px 14px 52px;
+ line-height:1.3;
+}
+#home .game-menu small{padding-top:4px;line-height:1.3}
