@@ -20,7 +20,7 @@
   $('packageChoice').replaceChildren(...LD_PACKAGES[game].map(p=>{const o=document.createElement('option');o.value=p.id;o.textContent=p.label;return o;}));
   if(LD_PACKAGES[game].some(p=>p.id===s.packageId))$('packageChoice').value=s.packageId;
   $('pageTitle').textContent=names[game];$('home').hidden=true;$('setup').hidden=false;$('play').hidden=true;$('progressScreen').hidden=true;$('history').hidden=true;$('homeButton').hidden=false;
-  update();if(window.LDNavigation)window.LDNavigation.show('setup',game);else history.replaceState(null,'','#'+game);window.scrollTo(0,0);
+  update();window.LDGame?.prepare(game);if(window.LDNavigation)window.LDNavigation.show('setup',game);else history.replaceState(null,'','#'+game);window.scrollTo(0,0);
  }
  function home(){document.body.classList.add('choosing');window.LDGame?.leave();document.body.classList.remove('playing');document.body.classList.remove('searching-image');for(const id of ['setup','play','progressScreen','history'])$(id).hidden=true;$('home').hidden=false;$('homeButton').hidden=true;$('pageTitle').textContent='Lesedetektive';if(window.LDNavigation)window.LDNavigation.show('home');else history.replaceState(null,'',location.pathname+location.search);}
  function clean(){clearTimeout(hold);hold=null;token++;$('introVideo').pause();$('introVideo').removeAttribute('src');$('introVideo').load();}
