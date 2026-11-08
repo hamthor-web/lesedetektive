@@ -1,5 +1,9 @@
 'use strict';
 (()=>{
+ const info=document.getElementById('appInfoDialog');
+ document.addEventListener('click',event=>{
+  if(event.target.closest?.('[data-open-info]')&&info&&!info.open)info.showModal();
+ });
  const menu=document.getElementById('gameMenu');
  if(!menu)return;
  const compact=matchMedia('(max-width:600px), (max-aspect-ratio:2/3), (max-height:500px)');
