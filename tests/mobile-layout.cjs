@@ -39,7 +39,7 @@ for(const [width,height] of [[320,740],[393,852],[412,915],[806,1660],[980,2080]
    await page.evaluate(g=>LDSelection.openGame(g),game);await page.locator('#start').click();
    if(game==='reading')await page.locator('#read').click();
    else{
-    const wrong=await page.evaluate(g=>{if(g==='family')return document.querySelector('#task').textContent.includes('wie in ich')?0:1;const w=document.querySelector('#task .reading').textContent;return LD_DATA.soft.includes(w)?1:0},game);
+    const wrong=await page.evaluate(g=>{if(g==='family')return [...document.querySelectorAll('[data-answer]')].findIndex(b=>Number(b.dataset.answer)===(document.querySelector('#task').textContent.includes('wie in ich')?0:1));const w=document.querySelector('#task .reading').textContent;return LD_DATA.soft.includes(w)?1:0},game);
     await page.locator('#task .answers button').nth(wrong).click();
     assert.ok(await page.locator('#feedback').evaluate(e=>e.getBoundingClientRect().bottom<=document.querySelector('#task').getBoundingClientRect().top+1),'feedback must not be hidden behind task');
    }
