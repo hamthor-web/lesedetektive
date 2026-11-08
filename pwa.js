@@ -4,7 +4,7 @@
   let installPrompt = null, registration = null, applying = false, checking = false, installedHere = false;
   const standalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  const status = text => document.querySelectorAll('[data-app-status]').forEach(el => { el.textContent = text; });
+  const status = (text, showOfflineNotice = false) => document.querySelectorAll('[data-app-status]').forEach(el => { el.textContent = text; const panel = el.closest?.('[data-offline-panel]'); if (panel) panel.hidden = !showOfflineNotice; });
   function render() {
     document.querySelectorAll('[data-app-action="install"]').forEach(b => { b.textContent = standalone() || installedHere ? 'Installiert' : 'Installieren'; b.disabled = standalone() || installedHere; });
     document.querySelectorAll('[data-app-action="update"]').forEach(b => { b.disabled = checking; b.textContent = registration?.waiting ? 'Aktualisierung laden' : 'Aktualisieren'; });
@@ -44,9 +44,9 @@
     navigator.serviceWorker.addEventListener('controllerchange', () => { if (applying) { applying = false; location.reload(); } });
     navigator.serviceWorker.addEventListener('message', event => {
       const data = event.data;
-      if (data?.type === 'LD_OFFLINE_PROGRESS') status(`Für die Nutzung ohne Internet wird vorbereitet (${data.completed}/${data.total}). Bitte geöffnet lassen.`);
+      if (data?.type === 'LD_OFFLINE_PROGRESS') status(`Für die Nutzung ohne Internet wird vorbereitet (${data.completed}/${data.total}). Bitte geöffnet lassen.`, true);
       if (data?.type === 'LD_OFFLINE_READY') status('Lesedetektive ist auf diesem Gerät auch ohne Internet bereit.');
-      if (data?.type === 'LD_OFFLINE_ERROR') status('Die Offline-Vorbereitung konnte nicht abgeschlossen werden. Bitte mit Internet erneut öffnen.');
+      if (data?.type === 'LD_OFFLINE_ERROR') status('Die Offline-Vorbereitung konnte nicht abgeschlossen werden. Bitte mit Internet erneut öffnen.', true);
     });
     navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(reg => {
       registration = reg;
