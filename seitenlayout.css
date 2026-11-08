@@ -123,3 +123,15 @@ body.playing .round-actions{justify-content:flex-start}
 .game-menu-tools>summary::before{content:'▸';flex:0 0 auto}
 .game-menu-tools[open]>summary::before{content:'▾'}
 body.playing .game-menu-items button{font-size:clamp(18px,1.7vw,24px)!important;overflow-wrap:normal;hyphens:auto}
+
+/* Equal-height choices grow together when a label wraps onto another line. */
+body.playing #task .answers,
+body.playing #task .duel,
+.game-menu-items,
+#progressScreen .result-actions{
+ grid-auto-rows:1fr;
+ align-items:stretch;
+}
+body.choosing .game-menu{grid-template-rows:repeat(3,1fr)}
+body.playing #task .answers button,
+body.playing #task .duel button{width:100%;align-self:stretch}
